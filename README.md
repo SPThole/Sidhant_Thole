@@ -4,6 +4,12 @@ Hello, Welcome to my personal webpage.
 
 ![](/images/tholesidhant.jpg)
 
+# Journey till now:
+1. Bachelors in Technology (Mechanical) from VIT Pune ( Pune University )
+2. Masters of Science (Engineering Design) by Research from Indian Institute of Technology Madras 
+    I am part of ADOPT group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on optimization and probabilistic techniques focused       on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for           designer
+      informed decisions
+3. Working as Data Science Associate at ZS Associates
 
 # Projects 
 
