@@ -2,7 +2,7 @@
 
 Hello, Welcome to my personal webpage.
 
-![logo](/images/tholesidhant.jpg)
+![](/images/tholesidhant.jpg)
 
 
 # Projects 
