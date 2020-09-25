@@ -2,5 +2,5 @@
 
 Hello, Welcome to my personal webpage.
 
-![alt text] (images/tholesidhant.jpg)
+![alt text] (/images/tholesidhant.jpg)
 
