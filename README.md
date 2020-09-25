@@ -8,7 +8,8 @@ Hello, Welcome to my personal webpage.
 ### 1. Bachelors in Technology (Mechanical) from VIT Pune ( Pune University ) [2013 -2017]>>
 ### 2. Masters of Science (Engineering Design) by Research from IIT Madras [2017-2020]>>
 ![](/images/iitmlogo.png)
-    I am part of ADOPT group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on optimization and probabilistic techniques focused       on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for           designer informed decisions
+ 
+ --I am part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic techniques_ focused  on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for          designer informed decisions 
 ![](https://ed.iitm.ac.in/~palramu/ADOPT.jpg)
 ### 3. Working as Data Science Associate at ZS Associates (Current)
 
@@ -24,7 +25,7 @@ Here is the [link](https://link.springer.com/article/10.1007/s00158-020-02665-6#
 
 [My research advisor's (Dr. Palaniappan Ramu) homepage](https://ed.iitm.ac.in/~palramu/)
 
-# Get in touch through..
+# Get in touch through..:+1:
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://in.linkedin.com/in/sidhant-p-thole-62128aaa)
 &nbsp;
 [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/SPThole)
