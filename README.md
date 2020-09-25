@@ -6,14 +6,18 @@ Hello, Welcome to my personal webpage.
 
 # Journey till now:
 ### 1. Bachelors in Technology (Mechanical) from VIT Pune ( Pune University ) [2013 -2017]>>
+---
 ### 2. Masters of Science (Engineering Design) by Research from IIT Madras [2017-2020]>>
 ![](/images/iitmlogo.png)
  
- --I am a part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic techniques_ on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for          designer informed decisions 
+ --I am a part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic and metamodeling techniques_ for the problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for designer to take informed decisions. 
  
 ![](https://ed.iitm.ac.in/~palramu/ADOPT.jpg)
+
+---
 ### 3. Working as Data Science Associate at ZS Associates (Current)
 
+---
 # Projects 
 
 ### Design Space Exploration and Optimization using Self Organizing Maps [Journal Paper] **[Impact Factor: 3.37]**
@@ -22,11 +26,17 @@ Identifying regions of interest (RoI) in the design space is extremely useful wh
 
 Here is the [link](https://link.springer.com/article/10.1007/s00158-020-02665-6#:~:text=Self%2Dorganizing%20maps%20(SOM),hinder%20visualizing%20the%20design%20space.) for the journal paper.
 
+---
+
 ### Identifying robust design spaces using Self Organizing Map [Conference]
 #### [13th World Congress of Structural and Multidisciplinary Optimization, Beijing, China](https://www.issmo.net/wp-content/uploads/WCSMO13-Proceeding.pdf)
 
+---
+
 ### Design Space Exploration using Self Organizing Map [Conference]
 #### National Conference on Multidisciplinary Design, Analysis, and Optimization
+
+---
 
 # Relevant websites:
 
