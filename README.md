@@ -2,7 +2,7 @@
 
 Hello, Welcome to my personal webpage.
 
-![logo](https://github.com/SPThole/Sidhant_Thole/blob/master/images/tholesidhant.jpg)
+![logo](/images/tholesidhant.jpg)
 
 
 # Projects 
