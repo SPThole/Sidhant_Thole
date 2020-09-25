@@ -4,5 +4,5 @@ Hello, Welcome to my personal webpage.
 
 ![alt text][logo]
 
-[logo]: https://github.com/SPThole/sidhantthole/blob/master/images/tholesidhant.jpg =250x250
+[logo]: <img src="https://github.com/SPThole/sidhantthole/blob/master/images/tholesidhant.jpg" width="48">
 
