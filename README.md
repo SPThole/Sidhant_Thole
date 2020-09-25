@@ -10,6 +10,7 @@ Hello, Welcome to my personal webpage.
 ![](/images/iitmlogo.png)
  
  --I am part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic techniques_ focused  on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for          designer informed decisions 
+ 
 ![](https://ed.iitm.ac.in/~palramu/ADOPT.jpg)
 ### 3. Working as Data Science Associate at ZS Associates (Current)
 
