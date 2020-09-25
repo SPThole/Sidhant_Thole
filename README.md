@@ -9,7 +9,7 @@ Hello, Welcome to my personal webpage.
 ### 2. Masters of Science (Engineering Design) by Research from IIT Madras [2017-2020]>>
 ![](/images/iitmlogo.png)
  
- --I am part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic techniques_ focused  on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for          designer informed decisions 
+ --I am a part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic techniques_ on problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for          designer informed decisions 
  
 ![](https://ed.iitm.ac.in/~palramu/ADOPT.jpg)
 ### 3. Working as Data Science Associate at ZS Associates (Current)
@@ -23,14 +23,14 @@ Identifying regions of interest (RoI) in the design space is extremely useful wh
 Here is the [link](https://link.springer.com/article/10.1007/s00158-020-02665-6#:~:text=Self%2Dorganizing%20maps%20(SOM),hinder%20visualizing%20the%20design%20space.) for the journal paper.
 
 ### Identifying robust design spaces using Self Organizing Map [Conference]
-#### 13th World Congress of Structural and Multidisciplinary Optimization, Beijing, China
+#### [13th World Congress of Structural and Multidisciplinary Optimization, Beijing, China](https://www.issmo.net/wp-content/uploads/WCSMO13-Proceeding.pdf)
 
 ### Design Space Exploration using Self Organizing Map [Conference]
 #### National Conference on Multidisciplinary Design, Analysis, and Optimization
 
 # Relevant websites:
 
-[My research advisor's (Dr. Palaniappan Ramu) homepage](https://ed.iitm.ac.in/~palramu/)
+[ADOPT homepage](https://ed.iitm.ac.in/~palramu/)
 
 # Get in touch through..:+1:
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://in.linkedin.com/in/sidhant-p-thole-62128aaa)
