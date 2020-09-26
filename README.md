@@ -47,4 +47,5 @@ Here is the [link](https://link.springer.com/article/10.1007/s00158-020-02665-6#
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://in.linkedin.com/in/sidhant-p-thole-62128aaa)
 &nbsp;
 [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/SPThole)
-[:email:](mailto:tholesidhantp@gmail.com)
+:email:[Email](mailto:tholesidhantp@gmail.com)
+[[Google Scholar]](https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en)
