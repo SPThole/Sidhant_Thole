@@ -17,7 +17,7 @@
 ### 3. Working as Data Science Associate at ZS Associates [Aug 2020 - Mar 2021]
 
 ---
-### 4. Lead Data Scientist at AI CoE, Fidelity Investments.
+### 4. Lead Data Scientist at AI CoE, Fidelity Investments
 
 ---
 # Projects 
