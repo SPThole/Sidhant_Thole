@@ -14,7 +14,10 @@
 >   I am a part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic and metamodeling techniques_ for the problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for designer to take informed decisions. 
  
 ---
-### 3. Working as Data Science Associate at ZS Associates (Current)
+### 3. Working as Data Science Associate at ZS Associates [Aug 2020 - Mar 2021]
+
+---
+### 4. Lead Data Scientist at AI CoE, Fidelity Investments.
 
 ---
 # Projects 
