@@ -44,7 +44,7 @@ Here is the [link](https://link.springer.com/article/10.1007/s00158-020-02665-6#
 
 ---
 ### Coding Skills :computer: :
-##### Python , Matlab, R, Octave
+##### Python, SQL, MATLAB, R
 
 # Relevant websites:
 
