@@ -5,5 +5,6 @@ gems:
   - jemoji
 github:
   is_project_page: false
-markdown: kramdown  
+markdown: GFM  
 google analytics: [UA-179085947-1]
+url: 'http://spthole.github.io'
