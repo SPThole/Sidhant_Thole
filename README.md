@@ -42,4 +42,4 @@
 :email:[Email](mailto:tholesidhantp@gmail.com)
 [[Google Scholar]](https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en)
 [[Kaggle]](https://www.kaggle.com/dawinci)
-[[Resume]](https://github.com/SPThole/resume/)
+[[Resume]](https://github.com/Sidhant_Thole/resume/)
