@@ -20,14 +20,13 @@
 ### 4. Lead Data Scientist at AI CoE, Fidelity Investments [Apr 2021 - Current]
 
 ---
-# Projects 
+| Projects | Description |
 
-|### [Design Space Exploration and Optimization using Self Organizing Maps [Journal Paper] **[Impact Factor: 3.37]**](https://spthole.github.io/Sidhant_Thole/Projects/dsesom)|
+| Design Space Exploration and Optimization using Self Organizing Maps | [[Journal Paper] **[Impact Factor: 3.37]**](https://spthole.github.io/Sidhant_Thole/Projects/dsesom) |
 ---
-|### [Identifying robust design spaces using Self Organizing Map [Conference]](https://spthole.github.io/Sidhant_Thole/Projects/robustsom)|
+| Identifying robust design spaces using Self Organizing Map | [Conference](https://spthole.github.io/Sidhant_Thole/Projects/robustsom) |
 ---
-|### Design Space Exploration using Self Organizing Map [Conference]
-#### National Conference on Multidisciplinary Design, Analysis, and Optimization|
+| Design Space Exploration using Self Organizing Map [Conference] | National Conference on Multidisciplinary Design, Analysis, and Optimization |
 ---
 ### Coding Skills :computer: :
 ##### Python, SQL, MATLAB, R
