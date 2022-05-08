@@ -25,6 +25,7 @@
 | Design Space Exploration and Optimization using Self Organizing Maps | [[Journal Paper] **[Impact Factor: 3.37]**](https://spthole.github.io/Sidhant_Thole/Projects/dsesom) 
 | Identifying robust design spaces using Self Organizing Map | [Conference](https://spthole.github.io/Sidhant_Thole/Projects/robustsom) 
 | Design Space Exploration using Self Organizing Map | National Conference on Multidisciplinary Design, Analysis, and Optimization 
+| Deep Learning Projects | [codes](https://spthole.github.io/Sidhant_Thole/Projects/personal_projects)
 ---
 
 ### Coding Skills :computer: :
