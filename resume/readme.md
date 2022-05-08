@@ -1,6 +1,4 @@
-_Projects_
-
-Resume:
+_Resume_
 
 <object data="https://spthole.github.io/Sidhant_Thole/resume/Sidhant_thole.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://spthole.github.io/Sidhant_Thole/resume/Sidhant_thole.pdf">
