@@ -1,7 +1,7 @@
 # _Sidhant Thole_
 
 ## Hello, Welcome to my personal webpage.
-<img align="left" src="./images/tholesidhant.jpg" width="30%" height="30%" >
+<img src="./images/tholesidhant.jpg" width="30%" height="30%" >
 
 # Journey till now:
 ### 1. Bachelors in Technology (Mechanical) from VIT Pune ( Pune University ) [2013 -2017]>>
