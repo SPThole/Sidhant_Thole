@@ -3,5 +3,7 @@ title: [Sidhant Thole]
 description: []
 gems: 
   - jemoji
+github:
+  is_project_page: false
   
 google analytics: [UA-179085947-1]
