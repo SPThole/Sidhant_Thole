@@ -2,6 +2,7 @@
 
 ## Hello, Welcome to my personal webpage.
 <img align="left" src="./images/tholesidhant.jpg" width="30%" height="30%" >
+
 # Journey till now:
 ### 1. Bachelors in Technology (Mechanical) from VIT Pune ( Pune University ) [2013 -2017]>>
 ---
@@ -11,8 +12,10 @@
 </p>
 >   I am a part of **ADOPT** group at IIT Madras (Advanced Design Optimization and Probabilistic Techniques). This group focuses on _optimization and probabilistic and metamodeling techniques_ for the problems where small data is available. My research was focused on developing interpretable multidimensional visualization technique which can be helpful for designer to take informed decisions. 
 ---
+
 ### 3. Working as Data Science Associate at ZS Associates [Aug 2020 - Mar 2021]
 ---
+
 ### 4. Lead Data Scientist at AI CoE, Fidelity Investments [Apr 2021 - Current]
 
 # Projects
