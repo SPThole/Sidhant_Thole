@@ -5,5 +5,8 @@ gems:
   - jemoji
 github:
   is_project_page: false
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
   
 google analytics: [UA-179085947-1]
