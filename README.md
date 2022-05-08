@@ -17,20 +17,17 @@
 ### 3. Working as Data Science Associate at ZS Associates [Aug 2020 - Mar 2021]
 
 ---
-### 4. Lead Data Scientist at AI CoE, Fidelity Investments
+### 4. Lead Data Scientist at AI CoE, Fidelity Investments [Apr 2021 - Current]
 
 ---
 # Projects 
 
-### [Design Space Exploration and Optimization using Self Organizing Maps [Journal Paper] **[Impact Factor: 3.37]**](https://spthole.github.io/Sidhant_Thole/Projects/dsesom)
+|### [Design Space Exploration and Optimization using Self Organizing Maps [Journal Paper] **[Impact Factor: 3.37]**](https://spthole.github.io/Sidhant_Thole/Projects/dsesom)|
 ---
-### [Identifying robust design spaces using Self Organizing Map [Conference]](https://spthole.github.io/Sidhant_Thole/Projects/robustsom)
+|### [Identifying robust design spaces using Self Organizing Map [Conference]](https://spthole.github.io/Sidhant_Thole/Projects/robustsom)|
 ---
-### Design Space Exploration using Self Organizing Map [Conference]
-#### National Conference on Multidisciplinary Design, Analysis, and Optimization
----
-### Nexus of social capital and performance of Farmer Producer Companies: An investigation using Self Organizing Maps [Journal Paper (Under Review)]
-
+|### Design Space Exploration using Self Organizing Map [Conference]
+#### National Conference on Multidisciplinary Design, Analysis, and Optimization|
 ---
 ### Coding Skills :computer: :
 ##### Python, SQL, MATLAB, R
