@@ -6,15 +6,16 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #3b82f6;
-    --dark-bg: #0f172a;
-    --darker-bg: #020617;
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
-    --border-color: #1e293b;
-    --card-bg: #1e293b;
+    --primary-color: #007acc;
+    --secondary-color: #005a9e;
+    --dark-bg: #1e1e1e;
+    --darker-bg: #252526;
+    --text-primary: #d4d4d4;
+    --text-secondary: #9cdcfe;
+    --text-muted: #858585;
+    --border-color: #3e3e42;
+    --card-bg: #2d2d30;
+    --navbar-bg: rgba(37, 37, 38, 0.95);
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -23,14 +24,15 @@
 /* Light theme variables */
 :root[data-theme="light"] {
     --primary-color: #0066cc;
-    --secondary-color: #0052a3;
+    --secondary-color: #005a9e;
     --dark-bg: #f3f4f6;
     --darker-bg: #ffffff;
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --text-muted: #64748b;
-    --border-color: #e2e8f0;
-    --card-bg: #f8fafc;
+    --text-primary: #383a42;
+    --text-secondary: #4078f2;
+    --text-muted: #a0a1a7;
+    --border-color: #e5e7eb;
+    --card-bg: #f9fafb;
+    --navbar-bg: rgba(255, 255, 255, 0.95);
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -41,7 +43,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--darker-bg);
     color: var(--text-primary);
     line-height: 1.6;
@@ -61,11 +63,12 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(15, 23, 42, 0.8);
+    background: var(--navbar-bg);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
 }
 
 .navbar .container {
@@ -430,6 +433,135 @@ section {
 .more-projects-content p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+}
+
+/* Experience Section */
+.experience {
+    background: var(--dark-bg);
+}
+
+/* Open Source Section */
+.opensource {
+    background: var(--darker-bg);
+}
+
+.opensource-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.opensource-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.opensource-card.featured {
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, rgba(0, 122, 204, 0.05) 0%, rgba(0, 90, 158, 0.05) 100%);
+}
+
+.opensource-header {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.opensource-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.opensource-header h3 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.github-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.opensource-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.opensource-features {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--darker-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.opensource-features h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.opensource-features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.opensource-features li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.opensource-features li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.opensource-features strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.opensource-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Updates Section */
+.updates {
+    background: var(--dark-bg);
+}
+
+.updates-content {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.updates-placeholder {
+    color: var(--text-muted);
+    font-size: 1.125rem;
+    font-style: italic;
 }
 
 /* Experience Section */
