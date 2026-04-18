@@ -114,6 +114,7 @@
     }
 
     const THEMES = {
+        github:     { c1: '#24292e', c2: '#0d1117', accent: '#79c0ff', icon: 'code' },
         springer:   { c1: '#0b6a63', c2: '#024d4a', accent: '#7ed4c4', icon: 'book' },
         heliyon:    { c1: '#e65100', c2: '#a02000', accent: '#ffd180', icon: 'sun'  },
         conference: { c1: '#1f4fa8', c2: '#0c2a63', accent: '#7aa7ff', icon: 'podium' },
@@ -123,7 +124,8 @@
     };
 
     const ICON_PATHS = {
-        // Each icon is centered in a 30×30 viewBox drawn at SVG coords (150,20).
+        // Each icon is drawn in a 30×30 box and translated by the SVG `<g transform>`.
+        code:   '<path d="M10 8 L2 15 L10 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 8 L28 15 L20 22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="18" y1="4" x2="12" y2="26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>',
         book:   '<path d="M4 5h22v20H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 5a2 2 0 0 1 2-2h20v20H6a2 2 0 0 0-2 2" fill="none" stroke="currentColor" stroke-width="2"/>',
         sun:    '<circle cx="15" cy="15" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="15" y1="2" x2="15" y2="6"/><line x1="15" y1="24" x2="15" y2="28"/><line x1="2" y1="15" x2="6" y2="15"/><line x1="24" y1="15" x2="28" y2="15"/><line x1="5" y1="5" x2="8" y2="8"/><line x1="22" y1="22" x2="25" y2="25"/><line x1="5" y1="25" x2="8" y2="22"/><line x1="22" y1="8" x2="25" y2="5"/></g>',
         podium: '<rect x="5" y="14" width="6" height="12" fill="currentColor"/><rect x="12" y="8" width="6" height="18" fill="currentColor"/><rect x="19" y="18" width="6" height="8" fill="currentColor"/><polygon points="15,2 17,6 13,6" fill="currentColor"/>',
@@ -182,18 +184,15 @@
         }
     }
 
-    function setCoverFromRepo(cover, card, title, repo) {
-        const img = new Image();
-        img.alt = title;
-        img.loading = 'lazy';
-        img.decoding = 'async';
-        img.referrerPolicy = 'no-referrer';
-        img.onload = () => {
-            cover.innerHTML = '';
-            cover.appendChild(img);
-        };
-        img.onerror = () => setCoverSvg(cover, card, title);
-        img.src = `https://opengraph.githubassets.com/1/${repo}`;
+    function wireCoverImage(cover, card, title) {
+        const existing = cover.querySelector('img');
+        if (!existing) return false;
+        existing.addEventListener('error', () => setCoverSvg(cover, card, title), { once: true });
+        // If the image already failed before this listener attached (rare), swap now.
+        if (existing.complete && existing.naturalWidth === 0) {
+            setCoverSvg(cover, card, title);
+        }
+        return true;
     }
 
     document.querySelectorAll('.card').forEach(card => {
@@ -201,12 +200,8 @@
         if (!cover) return;
         const titleEl = card.querySelector('.card-title');
         const title = (titleEl && titleEl.textContent.trim()) || card.textContent.trim().slice(0, 40);
-        const repo = card.dataset.repo;
-        if (repo) {
-            setCoverFromRepo(cover, card, title, repo);
-        } else {
-            setCoverSvg(cover, card, title);
-        }
+        if (wireCoverImage(cover, card, title)) return;
+        setCoverSvg(cover, card, title);
     });
 
     // ---------- init ----------
