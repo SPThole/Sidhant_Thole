@@ -6,7 +6,7 @@
     <meta name="color-scheme" content="light">
     <meta name="description" content="Sidhant Thole — Senior Data Scientist & AI Researcher">
     <title>Sidhant Thole</title>
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -133,59 +133,65 @@
             <h2 class="panel-title">Projects</h2>
             <p class="panel-note">Tools and open-source I've built.</p>
 
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://github.com/SPThole/CoexistAI" class="list-title" target="_blank" rel="noopener">CoexistAI</a>
-                        <span class="list-meta">Open source · ★ 470</span>
+            <div class="cards">
+                <a class="card" href="https://github.com/SPThole/CoexistAI" target="_blank" rel="noopener" data-repo="SPThole/CoexistAI">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">CoexistAI</span>
+                            <span class="card-meta">★ 470 · Open source</span>
+                        </div>
+                        <p class="card-desc">
+                            LLM-driven research automation framework. FastAPI + LangChain,
+                            multimodal inputs (web, Reddit, YouTube, PDFs, code),
+                            SearxNG retrieval, and pluggable LLMs with async APIs.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        LLM-driven research automation framework. FastAPI + LangChain,
-                        multimodal inputs (web, Reddit, YouTube, PDFs, code),
-                        SearxNG retrieval, and pluggable LLMs (Gemini, OpenAI, Ollama)
-                        with async APIs and geospatial reasoning.
-                    </p>
-                </li>
-                <li>
-                    <div class="list-row">
-                        <a href="https://github.com/SPThole/smallGPT" class="list-title" target="_blank" rel="noopener">smallGPT</a>
-                        <span class="list-meta">From scratch · LLMs</span>
+                </a>
+                <a class="card" href="https://github.com/SPThole/smallGPT" target="_blank" rel="noopener" data-repo="SPThole/smallGPT">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">smallGPT</span>
+                            <span class="card-meta">From scratch · LLMs</span>
+                        </div>
+                        <p class="card-desc">
+                            From-scratch implementations of LLM internals: GPT-2,
+                            Flash Attention, RoPE, Multi-Head Latent Attention,
+                            speculative decoding, online softmax, scalar autodiff.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        From-scratch implementations of core LLM internals: GPT-2,
-                        Flash Attention, Rotary embeddings, Multi-Head Latent Attention,
-                        speculative decoding, online softmax, and scalar autodiff — a
-                        playground for understanding modern transformer stacks end to end.
-                    </p>
-                </li>
-                <li>
-                    <div class="list-row">
-                        <a href="https://github.com/SPThole/parameter-golf-experimentations" class="list-title" target="_blank" rel="noopener">parameter-golf-experimentations</a>
-                        <span class="list-meta">OpenAI Parameter Golf · 8×H100</span>
+                </a>
+                <a class="card" href="https://github.com/SPThole/parameter-golf-experimentations" target="_blank" rel="noopener" data-repo="SPThole/parameter-golf-experimentations">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">parameter-golf-experimentations</span>
+                            <span class="card-meta">8×H100 · 16 MB</span>
+                        </div>
+                        <p class="card-desc">
+                            119+ experiments for OpenAI Parameter Golf. Muon optimizer,
+                            meta-TTT, parallel residuals, architectural rewrites.
+                            Best: <strong>1.0744 bpb</strong> on legal_ttt.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        119+ structured experiments for the OpenAI Parameter Golf
-                        competition — training the smallest LM that fits in 16 MB in
-                        10 minutes on 8×H100. Covers baseline ablations, Muon
-                        optimizer, parallel residuals, meta-TTT, and architectural
-                        rewrites. Best result so far: <strong>1.0744 bpb</strong> on legal_ttt.
-                    </p>
-                </li>
-                <li>
-                    <div class="list-row">
-                        <a href="https://github.com/SPThole/bpb_wtf" class="list-title" target="_blank" rel="noopener">bpb.wtf</a>
-                        <span class="list-meta">ML experimentation viz</span>
+                </a>
+                <a class="card" href="https://github.com/SPThole/bpb_wtf" target="_blank" rel="noopener" data-repo="SPThole/bpb_wtf">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">bpb.wtf</span>
+                            <span class="card-meta">Experiment viz</span>
+                        </div>
+                        <p class="card-desc">
+                            Interactive mind-map for ML experimentation journeys.
+                            Concept-level nodes, organic Bezier edges, sentiment
+                            indicators, optional LLM-powered Python API.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        Interactive mind-map for visualizing ML experimentation journeys —
-                        what you tried, what worked, what didn't, and why. Concept-level
-                        nodes with organic Bezier connections, sentiment indicators, and
-                        an optional LLM-powered Python API. Built for Parameter Golf but
-                        reusable for any experiment workflow.
-                    </p>
-                </li>
-                <!-- Add new projects here. Copy the <li> block above. -->
-            </ul>
+                </a>
+                <!-- Add new projects here. Copy a <a class="card"> block above. Set data-repo="user/repo" for GitHub covers, or leave it off to auto-generate an SVG tile. -->
+            </div>
         </section>
 
         <!-- POSTS -->
@@ -230,101 +236,120 @@
             </div>
 
             <h3 class="group-heading">Journal papers</h3>
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://link.springer.com/article/10.1007/s00158-020-02611-6" class="list-title" target="_blank" rel="noopener">Design space exploration and optimization using Self-Organizing Maps</a>
-                        <span class="list-meta">Springer SMO · 2020 · 49 citations</span>
+            <div class="cards">
+                <a class="card" href="https://link.springer.com/article/10.1007/s00158-020-02611-6" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Design space exploration and optimization using Self-Organizing Maps</span>
+                            <span class="card-meta">Springer SMO · 2020 · 49 cites</span>
+                        </div>
+                        <p class="card-desc">
+                            With P. Ramu. Novel neural-network algorithm for multivariate
+                            response-surface visualization. Reaches optima with ~40% fewer
+                            data points. <em>Structural and Multidisciplinary Optimization</em> (IF 3.37).
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        With P. Ramu. Novel neural-network algorithm for multivariate
-                        response-surface visualization. Identifies regions of interest
-                        to reach optima with ~40% fewer data points.
-                        <em>Structural and Multidisciplinary Optimization</em> (Impact Factor 3.37).
-                    </p>
-                </li>
-                <li>
-                    <div class="list-row">
-                        <a href="https://www.cell.com/heliyon/fulltext/S2405-8440(23)06859-X" class="list-title" target="_blank" rel="noopener">Data-driven analysis of social capital in Farmer Producer Companies</a>
-                        <span class="list-meta">Heliyon · 2023 · 11 citations</span>
+                </a>
+                <a class="card" href="https://www.cell.com/heliyon/fulltext/S2405-8440(23)06859-X" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Data-driven analysis of social capital in Farmer Producer Companies</span>
+                            <span class="card-meta">Heliyon · 2023 · 11 cites</span>
+                        </div>
+                        <p class="card-desc">
+                            With A. Jayaraman, P. Ramu, S.C. Rajan. Applied data-driven methods
+                            to quantify social-capital formation in Indian Farmer Producer
+                            Companies. <em>Heliyon</em> (Elsevier / Cell Press).
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        With A. Jayaraman, P. Ramu, S.C. Rajan. Applied data-driven
-                        methods to quantify and analyze social capital formation in
-                        Indian Farmer Producer Companies. <em>Heliyon</em> (Elsevier/Cell Press).
-                        A 2025 corrigendum is also on file.
-                    </p>
-                </li>
-            </ul>
+                </a>
+            </div>
 
             <h3 class="group-heading">Conference papers</h3>
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://spthole.github.io/Sidhant_Thole/Projects/robustsom" class="list-title" target="_blank" rel="noopener">Identifying robust design spaces using Self-Organizing Maps</a>
-                        <span class="list-meta">WCSMO-13 · Beijing · 2019</span>
+            <div class="cards">
+                <a class="card" href="https://spthole.github.io/Sidhant_Thole/Projects/robustsom" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Identifying robust design spaces using Self-Organizing Maps</span>
+                            <span class="card-meta">WCSMO-13 · Beijing · 2019</span>
+                        </div>
+                        <p class="card-desc">
+                            13th World Congress of Structural and Multidisciplinary
+                            Optimization. Identifies regions of optima that remain robust
+                            under uncertainty in input features.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        13th World Congress of Structural and Multidisciplinary
-                        Optimization. Identifies regions of optima that remain robust
-                        under uncertainty in input features.
-                    </p>
-                </li>
-            </ul>
+                </a>
+            </div>
 
             <h3 class="group-heading">Thesis</h3>
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://spthole.github.io/Sidhant_Thole/Projects/dsesom" class="list-title" target="_blank" rel="noopener">Interpretable Self-Organizing Maps for Design Space Exploration and Optimization</a>
-                        <span class="list-meta">MS by Research · IIT Madras · 2020</span>
+            <div class="cards">
+                <a class="card" href="https://spthole.github.io/Sidhant_Thole/Projects/dsesom" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Interpretable Self-Organizing Maps for Design Space Exploration and Optimization</span>
+                            <span class="card-meta">MS Research · IIT Madras · 2020</span>
+                        </div>
+                        <p class="card-desc">
+                            Advisor: Prof. P. Ramu (ADOPT group). Interpretable SOM variants
+                            for sampling, EDA, correlation hunting, outlier detection,
+                            and optimization under tight computational budgets.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        Advisor: Prof. P. Ramu (ADOPT group). Interpretable SOM variants
-                        for sampling, EDA, correlation hunting, outlier detection, and
-                        optimization under tight computational budgets.
-                    </p>
-                </li>
-            </ul>
+                </a>
+            </div>
 
             <h3 class="group-heading">Competitions</h3>
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://www.kaggle.com/competitions/bms-molecular-translation" class="list-title" target="_blank" rel="noopener">Kaggle BMS — Molecular Translation</a>
-                        <span class="list-meta">2021 · Rank 56 / 874</span>
+            <div class="cards">
+                <a class="card" href="https://www.kaggle.com/competitions/bms-molecular-translation" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Kaggle BMS — Molecular Translation</span>
+                            <span class="card-meta">2021 · Rank 56 / 874</span>
+                        </div>
+                        <p class="card-desc">
+                            Predicting InChI sequences from noisy scanned molecular images
+                            (~2.4M labels). Mean Levenshtein 1.43 with a vision + LSTM-attention
+                            captioning stack.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        Predicting InChI sequences from noisy scanned molecular images
-                        (~2.4M labels). Mean Levenshtein 1.43 using a vision + LSTM-attention
-                        captioning stack.
-                    </p>
-                </li>
-            </ul>
+                </a>
+            </div>
 
             <h3 class="group-heading">Collaborators</h3>
-            <ul class="list">
-                <li>
-                    <div class="list-row">
-                        <a href="https://ed.iitm.ac.in/~palramu/" class="list-title" target="_blank" rel="noopener">Prof. Palaniappan Ramu</a>
-                        <span class="list-meta">IIT Madras · ADOPT group</span>
+            <div class="cards">
+                <a class="card" href="https://ed.iitm.ac.in/~palramu/" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Prof. Palaniappan Ramu</span>
+                            <span class="card-meta">IIT Madras · ADOPT</span>
+                        </div>
+                        <p class="card-desc">
+                            MS advisor and long-running collaborator on design optimization
+                            and data-driven research.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        MS advisor and long-running collaborator on design
-                        optimization and data-driven research.
-                    </p>
-                </li>
-                <li>
-                    <div class="list-row">
-                        <a href="https://hss.iitm.ac.in/faculty/sudhir-chella-rajan/" class="list-title" target="_blank" rel="noopener">Prof. Sudhir Chella Rajan</a>
-                        <span class="list-meta">IIT Madras · HSS</span>
+                </a>
+                <a class="card" href="https://hss.iitm.ac.in/faculty/sudhir-chella-rajan/" target="_blank" rel="noopener">
+                    <div class="card-cover"></div>
+                    <div class="card-body">
+                        <div class="card-head">
+                            <span class="card-title">Prof. Sudhir Chella Rajan</span>
+                            <span class="card-meta">IIT Madras · HSS</span>
+                        </div>
+                        <p class="card-desc">
+                            Co-author on the Farmer Producer Companies study — data methods
+                            applied to social-science research.
+                        </p>
                     </div>
-                    <p class="list-desc">
-                        Co-author on the Farmer Producer Companies study — data
-                        methods applied to social-science research.
-                    </p>
-                </li>
-            </ul>
+                </a>
+            </div>
         </section>
 
         <!-- RESUME -->
@@ -356,6 +381,6 @@
         <p class="copyright">© 2026 Sidhant Thole</p>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>
