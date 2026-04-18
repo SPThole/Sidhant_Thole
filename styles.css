@@ -1,5 +1,6 @@
 /* ---------- Tokens ---------- */
 :root {
+    color-scheme: light;
     --text: #111;
     --muted: #5a5a5a;
     --subtle: #9a9a9a;
@@ -24,6 +25,7 @@ html, body {
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    forced-color-adjust: none;
 }
 
 a {
