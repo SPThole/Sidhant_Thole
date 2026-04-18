@@ -3,357 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sidhant Thole - Lead Data Scientist & AI Researcher">
-    <title>Sidhant Thole - Portfolio</title>
+    <meta name="description" content="Sidhant Thole — Senior Data Scientist & AI Researcher">
+    <title>Sidhant Thole</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">ST</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#opensource">Open Source</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#updates">Updates</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#home" class="nav-home" data-tab="home">Sidhant Thole</a>
+            <ul class="nav-links" role="tablist">
+                <li><a href="#home" data-tab="home" role="tab">Home</a></li>
+                <li><a href="#about" data-tab="about" role="tab">About</a></li>
+                <li><a href="#projects" data-tab="projects" role="tab">Projects</a></li>
+                <li><a href="#posts" data-tab="posts" role="tab">Posts</a></li>
+                <li><a href="#portfolio" data-tab="portfolio" role="tab">Portfolio</a></li>
+                <li><a href="#resume" data-tab="resume" role="tab">Resume</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-icon">🌙</span>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title" id="typewriter-text"></h1>
-                <p class="hero-subtitle">Senior Data Scientist & AI Researcher</p>
-                <p class="hero-description">
-                    Specializing in AI/ML, design optimization, and building intelligent systems. 
-                    Currently leading AI initiatives at Fidelity Investments.
+    <main class="content">
+
+        <!-- HOME -->
+        <section class="tab-panel" id="home">
+            <div class="hero hero-with-avatar">
+                <div class="hero-text">
+                    <p class="eyebrow">Senior Data Scientist · AI Researcher</p>
+                    <h1>I teach models to read, write, and&nbsp;know when to&nbsp;shut&nbsp;up.</h1>
+                    <p class="lede">
+                        I pre-train LLMs, ship RAG systems, and build guardrails that
+                        actually hold. Currently at Fidelity's AI Center of Excellence.
+                    </p>
+                    <div class="cta-row">
+                        <a href="mailto:tholesidhantp@gmail.com" class="cta">Let's talk →</a>
+                        <a href="#projects" data-tab="projects" class="cta-secondary">See my work</a>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <img id="avatar-img" src="images/tholesidhant.jpg" alt="Sidhant Thole" />
+                </div>
+            </div>
+
+            <div class="logos" aria-label="Affiliations">
+                <span>Fidelity</span>
+                <span>IIT Madras</span>
+                <span>ZS Associates</span>
+            </div>
+
+            <div class="home-snippets">
+                <a href="#about" data-tab="about" class="snippet">
+                    <span class="snippet-label">About</span>
+                    <span class="snippet-arrow">→</span>
+                </a>
+                <a href="#projects" data-tab="projects" class="snippet">
+                    <span class="snippet-label">Projects</span>
+                    <span class="snippet-arrow">→</span>
+                </a>
+                <a href="#portfolio" data-tab="portfolio" class="snippet">
+                    <span class="snippet-label">Publications</span>
+                    <span class="snippet-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="tab-panel" id="about" hidden>
+            <h2 class="panel-title">About</h2>
+            <div class="prose">
+                <p>
+                    I'm a Senior Data Scientist at Fidelity's AI Center of Excellence,
+                    where I work across the full LLM stack — from pre-training
+                    transformer models on large-scale enterprise data, to retrieval
+                    and RAG systems over unstructured text, to safety and guardrails
+                    for deployed models.
                 </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+                <p>
+                    My work spans session modeling and intent prediction on clickstream
+                    data, conversation and transcript analytics with retrieval-augmented
+                    summarization, enterprise LLM safety and red-teaming, and building
+                    assistive copilots for internal workflows. I care a lot about making
+                    these systems reliable enough to actually deploy.
+                </p>
+                <p>
+                    Before Fidelity, I was at ZS Associates working on pharma analytics,
+                    explainable AI for ML predictions, and mixed-integer optimization
+                    for compliance-heavy program design.
+                </p>
+                <p>
+                    I did my MS by Research at <strong>IIT Madras</strong> with the ADOPT
+                    group (advisor: Prof. P. Ramu), working on interpretable
+                    Self-Organizing Maps for design-space exploration and optimization
+                    — published in Springer's <em>Structural and Multidisciplinary
+                    Optimization</em> and presented at WCSMO-13 in Beijing. I've continued
+                    collaborating with IIT Madras since, including a 2023 <em>Heliyon</em>
+                    paper applying data-driven methods to social capital in Farmer
+                    Producer Companies. Peer-reviewed work is listed on
+                    <a href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+                </p>
+                <p>
+                    I'm drawn to problems where research meets production:
+                    pre-training, retrieval, alignment, and evaluation. I like small,
+                    composable systems. I like shipping.
+                </p>
+
+                <h3>Stack</h3>
+                <p class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">transformers</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">pandas</span>
+                    <span class="tag">numpy</span>
+                    <span class="tag">optuna</span>
+                    <span class="tag">AWS (EC2 / S3 / SageMaker)</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MATLAB</span>
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="./images/tholesidhant.jpg" alt="Sidhant Thole">
-                </div>
-                <div class="about-text">
-                    <p>
-                        I'm a passionate data scientist and researcher with expertise in machine learning, 
-                        deep learning, and optimization techniques. I completed my M.S. (Engineering Design) 
-                        by Research from IIT Madras, where I was part of the ADOPT group focusing on 
-                        Advanced Design Optimization and Probabilistic Techniques.
+        <!-- PROJECTS -->
+        <section class="tab-panel" id="projects" hidden>
+            <h2 class="panel-title">Projects</h2>
+            <p class="panel-note">Tools and open-source I've built.</p>
+
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://github.com/SPThole/CoexistAI" class="list-title" target="_blank" rel="noopener">CoexistAI</a>
+                        <span class="list-meta">Open source · ★ 470</span>
+                    </div>
+                    <p class="list-desc">
+                        LLM-driven research automation framework. FastAPI + LangChain,
+                        multimodal inputs (web, Reddit, YouTube, PDFs, code),
+                        SearxNG retrieval, and pluggable LLMs (Gemini, OpenAI, Ollama)
+                        with async APIs and geospatial reasoning.
                     </p>
-                    <p>
-                        My research focused on developing interpretable multidimensional visualization 
-                        techniques using Self-Organizing Maps, enabling designers to make informed decisions 
-                        with limited computational budgets.
+                </li>
+                <li>
+                    <div class="list-row">
+                        <a href="https://github.com/SPThole/smallGPT" class="list-title" target="_blank" rel="noopener">smallGPT</a>
+                        <span class="list-meta">From scratch · LLMs</span>
+                    </div>
+                    <p class="list-desc">
+                        From-scratch implementations of core LLM internals: GPT-2,
+                        Flash Attention, Rotary embeddings, Multi-Head Latent Attention,
+                        speculative decoding, online softmax, and scalar autodiff — a
+                        playground for understanding modern transformer stacks end to end.
                     </p>
-                    <div class="skills">
-                        <h3>Skills & Technologies</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">MATLAB</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">Computer Vision</span>
-                        </div>
+                </li>
+                <li>
+                    <div class="list-row">
+                        <a href="https://github.com/SPThole/parameter-golf-experimentations" class="list-title" target="_blank" rel="noopener">parameter-golf-experimentations</a>
+                        <span class="list-meta">OpenAI Parameter Golf · 8×H100</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- CoexistAI Project -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3>CoexistAI</h3>
-                        <span class="project-tag">Featured</span>
-                    </div>
-                    <p class="project-description">
-                        CoexistAI is a modular, developer-friendly research assistant framework that enables you to build, 
-                        search, summarize, and automate research workflows using LLMs. Features include web exploration, 
-                        Reddit integration, YouTube transcript analysis, GitHub code exploration, map generation, text-to-podcast 
-                        conversion, and full MCP support for seamless integration with AI agents.
+                    <p class="list-desc">
+                        119+ structured experiments for the OpenAI Parameter Golf
+                        competition — training the smallest LM that fits in 16 MB in
+                        10 minutes on 8×H100. Covers baseline ablations, Muon
+                        optimizer, parallel residuals, meta-TTT, and architectural
+                        rewrites. Best result so far: <strong>1.0744 bpb</strong> on legal_ttt.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">MLOps</span>
+                </li>
+                <li>
+                    <div class="list-row">
+                        <a href="https://github.com/SPThole/bpb_wtf" class="list-title" target="_blank" rel="noopener">bpb.wtf</a>
+                        <span class="list-meta">ML experimentation viz</span>
                     </div>
-                </div>
-
-                <!-- Design Space Exploration -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Design Space Exploration & Optimization using SOM</h3>
-                        <span class="project-tag">Research</span>
-                    </div>
-                    <p class="project-description">
-                        Published in Structural and Multidisciplinary Optimization (Springer, IF: 3.37). 
-                        Developed modified SOM algorithm for interpretable design space visualization 
-                        enabling efficient identification of regions of interest.
+                    <p class="list-desc">
+                        Interactive mind-map for visualizing ML experimentation journeys —
+                        what you tried, what worked, what didn't, and why. Concept-level
+                        nodes with organic Bezier connections, sentiment indicators, and
+                        an optional LLM-powered Python API. Built for Parameter Golf but
+                        reusable for any experiment workflow.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">MATLAB</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                    <a href="https://spthole.github.io/Sidhant_Thole/Projects/dsesom" class="project-link">View Paper →</a>
-                </div>
+                </li>
+                <!-- Add new projects here. Copy the <li> block above. -->
+            </ul>
+        </section>
 
-                <!-- Robust Design Spaces -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Identifying Robust Design Spaces using SOM</h3>
-                        <span class="project-tag">Conference</span>
+        <!-- POSTS -->
+        <section class="tab-panel" id="posts" hidden>
+            <h2 class="panel-title">Posts</h2>
+            <p class="panel-note">Nothing here yet — coming soon.</p>
+            <ul class="list posts">
+                <!-- Posts will appear here. Copy this block:
+                <li>
+                    <div class="list-row">
+                        <a href="posts/my-slug.html" class="list-title">My title</a>
+                        <span class="list-meta">YYYY-MM-DD</span>
                     </div>
-                    <p class="project-description">
-                        Presented at 13th World Congress of Structural and Multidisciplinary Optimization, 
-                        Beijing, China. Novel approach to identifying robust design regions using 
-                        self-organizing maps.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Metamodeling</span>
-                        <span class="tech-tag">Visualization</span>
-                    </div>
-                    <a href="https://spthole.github.io/Sidhant_Thole/Projects/robustsom" class="project-link">View Details →</a>
-                </div>
+                    <p class="list-desc">One-line summary.</p>
+                </li>
+                -->
+            </ul>
+        </section>
 
-                <!-- Image Captioning -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Image Captioning with Attention</h3>
-                        <span class="project-tag">Deep Learning</span>
-                    </div>
-                    <p class="project-description">
-                        "Show, Attend and Tell" implementation using ResNet and LSTM with attention 
-                        mechanism on Flickr 8K dataset for automatic image caption generation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">LSTM</span>
-                    </div>
-                    <a href="https://github.com/SPThole/DL-Projects/blob/master/Image%20Captioning/Image_Captioning_with_resnet_LSTM_with_attention.ipynb" class="project-link">View Code →</a>
-                </div>
-
-                <!-- BERT NER -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Named Entity Recognition with BERT</h3>
-                        <span class="project-tag">NLP</span>
-                    </div>
-                    <p class="project-description">
-                        Fine-tuned BERT model for Named Entity Recognition tasks, implemented with 
-                        PyTorch Lightning and optimized for TPU training.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">BERT</span>
-                        <span class="tech-tag">NLP</span>
-                    </div>
-                    <a href="https://github.com/SPThole/DL-Projects/blob/master/NER_BERT/BERT_ner.ipynb" class="project-link">View Code →</a>
-                </div>
-
-                <!-- More Projects Link -->
-                <div class="project-card more-projects">
-                    <div class="more-projects-content">
-                        <h3>More Projects</h3>
-                        <p>Explore my collection of deep learning, NLP, and computer vision projects</p>
-                        <a href="https://spthole.github.io/Sidhant_Thole/Projects/personal_projects" class="btn btn-primary">View All Projects →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Open Source Section -->
-    <section id="opensource" class="opensource">
-        <div class="container">
-            <h2 class="section-title">Open Source</h2>
-            <div class="opensource-content">
-                <div class="opensource-card featured">
-                    <div class="opensource-header">
-                        <div class="opensource-icon">🤖</div>
-                        <div>
-                            <h3>CoexistAI</h3>
-                            <a href="https://github.com/SPThole/CoexistAI" target="_blank" class="github-link">
-                                <span>View on GitHub →</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="opensource-description">
-                        CoexistAI is a modular, developer-friendly research assistant framework that enables you to build, 
-                        search, summarize, and automate research workflows using LLMs. The framework provides a comprehensive 
-                        suite of tools for modern AI-powered research.
-                    </p>
-                    <div class="opensource-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li><strong>Web Exploration:</strong> Advanced web scraping and content analysis</li>
-                            <li><strong>Reddit Integration:</strong> Extract insights from community discussions</li>
-                            <li><strong>YouTube Transcript Analysis:</strong> Process and analyze video content</li>
-                            <li><strong>GitHub Code Exploration:</strong> Navigate and understand codebases</li>
-                            <li><strong>Map Generation:</strong> Create visual knowledge maps</li>
-                            <li><strong>Text-to-Podcast:</strong> Convert research into audio format</li>
-                            <li><strong>MCP Support:</strong> Full Model Context Protocol integration for seamless AI agent interaction</li>
-                        </ul>
-                    </div>
-                    <div class="opensource-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LLM</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">MLOps</span>
-                        <span class="tech-tag">MCP</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Apr 2021 - Present</div>
-                        <h3>Senior Data Scientist</h3>
-                        <h4>AI CoE, Fidelity Investments</h4>
-                        <p>Leading AI/ML initiatives and driving innovation in data science solutions.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2020 - Mar 2021</div>
-                        <h3>Data Science Associate</h3>
-                        <h4>ZS Associates</h4>
-                        <p>Developed data-driven solutions and analytics for healthcare and pharmaceutical clients.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2017 - 2020</div>
-                        <h3>M.S. (Engineering Design) by Research</h3>
-                        <h4>IIT Madras - ADOPT Group</h4>
-                        <div class="timeline-logos">
-                            <img src="./images/iitmlogo.png" alt="IIT Madras" class="timeline-logo">
-                        </div>
-                        <p>
-                            Research on Advanced Design Optimization and Probabilistic Techniques. 
-                            Developed interpretable multidimensional visualization techniques using 
-                            Self-Organizing Maps.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2013 - 2017</div>
-                        <h3>B.Tech (Mechanical Engineering)</h3>
-                        <h4>VIT Pune (Pune University)</h4>
-                        <p>Foundation in mechanical engineering principles and computational methods.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Updates Section -->
-    <section id="updates" class="updates">
-        <div class="container">
-            <h2 class="section-title">Updates</h2>
-            <div class="updates-content">
-                <p class="updates-placeholder">Updates coming soon...</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">
-                I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow researchers and developers.
+        <!-- PORTFOLIO -->
+        <section class="tab-panel" id="portfolio" hidden>
+            <h2 class="panel-title">Publications &amp; Projects</h2>
+            <p class="panel-note">
+                Peer-reviewed research in design optimization, ML interpretability, and
+                data-driven social analysis — plus a few fun sidequests.
             </p>
-            <div class="contact-links">
-                <a href="mailto:tholesidhantp@gmail.com" class="contact-card">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p>tholesidhantp@gmail.com</p>
-                </a>
-                <a href="https://in.linkedin.com/in/sidhant-p-thole-62128aaa" target="_blank" class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </a>
-                <a href="https://github.com/SPThole" target="_blank" class="contact-card">
-                    <div class="contact-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p>View my code</p>
-                </a>
-                <a href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" class="contact-card">
-                    <div class="contact-icon">📚</div>
-                    <h3>Google Scholar</h3>
-                    <p>Research publications</p>
-                </a>
-                <a href="https://www.kaggle.com/dawinci" target="_blank" class="contact-card">
-                    <div class="contact-icon">📊</div>
-                    <h3>Kaggle</h3>
-                    <p>Data science projects</p>
-                </a>
-                <a href="https://spthole.github.io/Sidhant_Thole/resume" target="_blank" class="contact-card">
-                    <div class="contact-icon">📄</div>
-                    <h3>Resume</h3>
-                    <p>Download CV</p>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Sidhant Thole. All rights reserved.</p>
-        </div>
+            <div class="scholar-stats">
+                <div class="stat">
+                    <span class="stat-num">60+</span>
+                    <span class="stat-label">Citations</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">h-index</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">i10-index</span>
+                </div>
+                <a class="stat-link" href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Full profile on Google Scholar →</a>
+            </div>
+
+            <h3 class="group-heading">Journal papers</h3>
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://link.springer.com/article/10.1007/s00158-020-02611-6" class="list-title" target="_blank" rel="noopener">Design space exploration and optimization using Self-Organizing Maps</a>
+                        <span class="list-meta">Springer SMO · 2020 · 49 citations</span>
+                    </div>
+                    <p class="list-desc">
+                        With P. Ramu. Novel neural-network algorithm for multivariate
+                        response-surface visualization. Identifies regions of interest
+                        to reach optima with ~40% fewer data points.
+                        <em>Structural and Multidisciplinary Optimization</em> (Impact Factor 3.37).
+                    </p>
+                </li>
+                <li>
+                    <div class="list-row">
+                        <a href="https://www.cell.com/heliyon/fulltext/S2405-8440(23)06859-X" class="list-title" target="_blank" rel="noopener">Data-driven analysis of social capital in Farmer Producer Companies</a>
+                        <span class="list-meta">Heliyon · 2023 · 11 citations</span>
+                    </div>
+                    <p class="list-desc">
+                        With A. Jayaraman, P. Ramu, S.C. Rajan. Applied data-driven
+                        methods to quantify and analyze social capital formation in
+                        Indian Farmer Producer Companies. <em>Heliyon</em> (Elsevier/Cell Press).
+                        A 2025 corrigendum is also on file.
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="group-heading">Conference papers</h3>
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://spthole.github.io/Sidhant_Thole/Projects/robustsom" class="list-title" target="_blank" rel="noopener">Identifying robust design spaces using Self-Organizing Maps</a>
+                        <span class="list-meta">WCSMO-13 · Beijing · 2019</span>
+                    </div>
+                    <p class="list-desc">
+                        13th World Congress of Structural and Multidisciplinary
+                        Optimization. Identifies regions of optima that remain robust
+                        under uncertainty in input features.
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="group-heading">Thesis</h3>
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://spthole.github.io/Sidhant_Thole/Projects/dsesom" class="list-title" target="_blank" rel="noopener">Interpretable Self-Organizing Maps for Design Space Exploration and Optimization</a>
+                        <span class="list-meta">MS by Research · IIT Madras · 2020</span>
+                    </div>
+                    <p class="list-desc">
+                        Advisor: Prof. P. Ramu (ADOPT group). Interpretable SOM variants
+                        for sampling, EDA, correlation hunting, outlier detection, and
+                        optimization under tight computational budgets.
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="group-heading">Competitions</h3>
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://www.kaggle.com/competitions/bms-molecular-translation" class="list-title" target="_blank" rel="noopener">Kaggle BMS — Molecular Translation</a>
+                        <span class="list-meta">2021 · Rank 56 / 874</span>
+                    </div>
+                    <p class="list-desc">
+                        Predicting InChI sequences from noisy scanned molecular images
+                        (~2.4M labels). Mean Levenshtein 1.43 using a vision + LSTM-attention
+                        captioning stack.
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="group-heading">Collaborators</h3>
+            <ul class="list">
+                <li>
+                    <div class="list-row">
+                        <a href="https://ed.iitm.ac.in/~palramu/" class="list-title" target="_blank" rel="noopener">Prof. Palaniappan Ramu</a>
+                        <span class="list-meta">IIT Madras · ADOPT group</span>
+                    </div>
+                    <p class="list-desc">
+                        MS advisor and long-running collaborator on design
+                        optimization and data-driven research.
+                    </p>
+                </li>
+                <li>
+                    <div class="list-row">
+                        <a href="https://hss.iitm.ac.in/faculty/sudhir-chella-rajan/" class="list-title" target="_blank" rel="noopener">Prof. Sudhir Chella Rajan</a>
+                        <span class="list-meta">IIT Madras · HSS</span>
+                    </div>
+                    <p class="list-desc">
+                        Co-author on the Farmer Producer Companies study — data
+                        methods applied to social-science research.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- RESUME -->
+        <section class="tab-panel" id="resume" hidden>
+            <div class="resume-header">
+                <h2 class="panel-title">Resume</h2>
+                <a href="resume/Sidhant_Thole.pdf" download class="cta">Download PDF ↓</a>
+            </div>
+            <div class="resume-embed">
+                <object data="resume/Sidhant_Thole.pdf#view=FitH" type="application/pdf" width="100%" height="900">
+                    <p>Your browser can't embed PDFs.
+                        <a href="resume/Sidhant_Thole.pdf">Download it here</a>.
+                    </p>
+                </object>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="mailto:tholesidhantp@gmail.com">Email</a></li>
+            <li><a href="https://in.linkedin.com/in/sidhant-p-thole-62128aaa" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/SPThole" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://www.kaggle.com/dawinci" target="_blank" rel="noopener">Kaggle</a></li>
+            <li><a href="#resume" data-tab="resume">Resume</a></li>
+        </ul>
+        <p class="copyright">© 2026 Sidhant Thole</p>
     </footer>
 
     <script src="script.js"></script>

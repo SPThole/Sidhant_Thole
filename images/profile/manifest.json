@@ -1,0 +1,66 @@
+[
+  {
+    "rank": 1,
+    "file": "rank_001.png"
+  },
+  {
+    "rank": 2,
+    "file": "rank_002.png"
+  },
+  {
+    "rank": 3,
+    "file": "rank_003.png"
+  },
+  {
+    "rank": 5,
+    "file": "rank_005.png"
+  },
+  {
+    "rank": 8,
+    "file": "rank_008.png"
+  },
+  {
+    "rank": 12,
+    "file": "rank_012.png"
+  },
+  {
+    "rank": 18,
+    "file": "rank_018.png"
+  },
+  {
+    "rank": 25,
+    "file": "rank_025.png"
+  },
+  {
+    "rank": 35,
+    "file": "rank_035.png"
+  },
+  {
+    "rank": 50,
+    "file": "rank_050.png"
+  },
+  {
+    "rank": 70,
+    "file": "rank_070.png"
+  },
+  {
+    "rank": 100,
+    "file": "rank_100.png"
+  },
+  {
+    "rank": 140,
+    "file": "rank_140.png"
+  },
+  {
+    "rank": 180,
+    "file": "rank_180.png"
+  },
+  {
+    "rank": 220,
+    "file": "rank_220.png"
+  },
+  {
+    "rank": 360,
+    "file": "rank_full.png"
+  }
+]
