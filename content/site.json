@@ -1,0 +1,105 @@
+{
+  "brand": {
+    "name": "Sidhant Thole",
+    "mark": "ST",
+    "description": "Sidhant Thole — Senior Data Scientist & AI Researcher"
+  },
+  "nav": [
+    { "id": "home",      "hash": "#home",      "label": "input"     },
+    { "id": "about",     "hash": "#about",     "label": "embed"     },
+    { "id": "projects",  "hash": "#projects",  "label": "attention" },
+    { "id": "posts",     "hash": "#posts",     "label": "notes"     },
+    { "id": "portfolio", "hash": "#portfolio", "label": "output"    },
+    { "id": "resume",    "hash": "#resume",    "label": "resume"    }
+  ],
+  "hero": {
+    "eyebrow": "fig 0 · input sequence",
+    "headline": "I teach models to read, write, and {em}know when to shut up.{/em}",
+    "lede": "Senior Data Scientist at Fidelity's AI Center of Excellence. I pre-train LLMs, ship RAG systems, and build guardrails that actually hold.",
+    "primary_cta": { "label": "let's talk →", "href": "mailto:tholesidhantp@gmail.com" },
+    "secondary_cta": { "label": "see my work", "href": "#projects", "tab": "projects" },
+    "affiliations": ["Fidelity", "IIT Madras", "ZS Associates"],
+    "avatar": "assets/profile_ghibli.png",
+    "napkin": "← that's me,\nprojected into\nlatent space"
+  },
+  "home_cards": [
+    { "tab": "about",     "label": "01 · embed",   "name": "About",        "sub": "who, what, stack",   "icon": "grid"     },
+    { "tab": "projects",  "label": "02 · attend",  "name": "Projects",     "sub": "things I built",     "icon": "attention"},
+    { "tab": "portfolio", "label": "03 · project", "name": "Publications", "sub": "peer-reviewed work", "icon": "bars"     },
+    { "tab": "resume",    "label": "04 · output",  "name": "Resume",       "sub": "full CV · pdf",      "icon": "doc"      }
+  ],
+  "projects": {
+    "panel_title": "Projects",
+    "panel_number": "02",
+    "schema_stamp": "attention · what I focus on",
+    "panel_note": "Tools and open-source I've built — each card is a \"block\" in the stack."
+  },
+  "publications": {
+    "panel_title": "Publications",
+    "panel_number": "03",
+    "schema_stamp": "projection · into the world",
+    "panel_note": "Peer-reviewed research in design optimization, ML interpretability, and data-driven social analysis — plus a few fun sidequests.",
+    "stats": [
+      { "num": "60+", "label": "citations" },
+      { "num": "2",   "label": "h-index" },
+      { "num": "2",   "label": "i10-index" }
+    ],
+    "scholar_link": "https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en",
+    "groups": [
+      { "id": "journal",       "title": "journal papers" },
+      { "id": "conference",    "title": "conference" },
+      { "id": "thesis",        "title": "thesis" },
+      { "id": "competitions",  "title": "competitions" },
+      { "id": "collaborators", "title": "collaborators" }
+    ]
+  },
+  "about": {
+    "panel_title": "About",
+    "panel_number": "01",
+    "schema_stamp": "embedding · identity → vector",
+    "panel_note": "Who I am, compressed into ~700 words and a handful of tags.",
+    "stack_title": "what I work with",
+    "stack": ["PyTorch", "transformers", "LangChain", "FastAPI", "scikit-learn", "pandas", "numpy", "optuna", "AWS", "Docker", "MySQL", "MATLAB"],
+    "profile_image": "assets/tholesidhant.jpg"
+  },
+  "notes": {
+    "panel_title": "Notes",
+    "panel_number": "⋯",
+    "schema_stamp": "scratchpad · wip",
+    "panel_note": "Short-form writing, research notes, and working thoughts.",
+    "scene": {
+      "photo": "assets/oldman_bench.jpg",
+      "photo_caption": "jungfraujoch · top of europe · 3,454 m",
+      "older": {
+        "name": "older_self",
+        "tag": "teacher · frozen weights",
+        "quote": "Transferring learning…",
+        "caption": "— pretrained on 80 years of mountains"
+      },
+      "younger": {
+        "name": "younger_self",
+        "tag": "student · learning rate = 1e-3",
+        "reply": "...so I just keep going?"
+      }
+    },
+    "empty_hand": "more notes, coming soon ✎",
+    "empty_sub": "— writing queue · priority=low —"
+  },
+  "resume": {
+    "panel_title": "Resume",
+    "panel_number": "04",
+    "schema_stamp": "detokenize · full CV",
+    "pdf": "assets/Sidhant_Thole.pdf"
+  },
+  "footer": {
+    "links": [
+      { "label": "email",    "href": "mailto:tholesidhantp@gmail.com" },
+      { "label": "linkedin", "href": "https://in.linkedin.com/in/sidhant-p-thole-62128aaa" },
+      { "label": "github",   "href": "https://github.com/SPThole" },
+      { "label": "scholar",  "href": "https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" },
+      { "label": "kaggle",   "href": "https://www.kaggle.com/dawinci" },
+      { "label": "resume",   "href": "#resume", "tab": "resume" }
+    ],
+    "copyright": "© 2026 · sidhant thole · EOS"
+  }
+}

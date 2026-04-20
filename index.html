@@ -1,401 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <meta name="description" content="Sidhant Thole — Senior Data Scientist & AI Researcher">
-    <title>Sidhant Thole</title>
-    <link rel="stylesheet" href="styles.css?v=7">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Sidhant Thole — Senior Data Scientist & AI Researcher" />
+  <title>Sidhant Thole — Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=15" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body>
-    <header class="site-header">
-        <nav class="nav">
-            <a href="#home" class="nav-home" data-tab="home">Sidhant Thole</a>
-            <ul class="nav-links" role="tablist">
-                <li><a href="#home" data-tab="home" role="tab">Home</a></li>
-                <li><a href="#about" data-tab="about" role="tab">About</a></li>
-                <li><a href="#projects" data-tab="projects" role="tab">Projects</a></li>
-                <li><a href="#posts" data-tab="posts" role="tab">Posts</a></li>
-                <li><a href="#portfolio" data-tab="portfolio" role="tab">Portfolio</a></li>
-                <li><a href="#resume" data-tab="resume" role="tab">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+<body data-theme="blueprint" data-density="normal" data-labels="on">
 
-    <main class="content">
+<header class="site-header"></header>
 
-        <!-- HOME -->
-        <section class="tab-panel" id="home">
-            <div class="hero hero-with-avatar">
-                <div class="hero-text">
-                    <p class="eyebrow">Senior Data Scientist · AI Researcher</p>
-                    <h1>I teach models to read, write, and&nbsp;know when to&nbsp;shut&nbsp;up.</h1>
-                    <p class="lede">
-                        I pre-train LLMs, ship RAG systems, and build guardrails that
-                        actually hold. Currently at Fidelity's AI Center of Excellence.
-                    </p>
-                    <div class="cta-row">
-                        <a href="mailto:tholesidhantp@gmail.com" class="cta">Let's talk →</a>
-                        <a href="#projects" data-tab="projects" class="cta-secondary">See my work</a>
-                    </div>
-                </div>
-                <div class="avatar">
-                    <img id="avatar-img" src="images/tholesidhant.jpg" alt="Sidhant Thole" />
-                </div>
-            </div>
+<main class="content">
+  <section class="tab-panel" id="home"></section>
+  <section class="tab-panel" id="about" hidden></section>
+  <section class="tab-panel" id="projects" hidden></section>
+  <section class="tab-panel" id="posts" hidden></section>
+  <section class="tab-panel" id="portfolio" hidden></section>
+  <section class="tab-panel" id="resume" hidden></section>
+</main>
 
-            <div class="logos" aria-label="Affiliations">
-                <span>Fidelity</span>
-                <span>IIT Madras</span>
-                <span>ZS Associates</span>
-            </div>
+<footer class="site-footer"></footer>
 
-            <div class="home-snippets">
-                <a href="#about" data-tab="about" class="snippet">
-                    <span class="snippet-label">About</span>
-                    <span class="snippet-arrow">→</span>
-                </a>
-                <a href="#projects" data-tab="projects" class="snippet">
-                    <span class="snippet-label">Projects</span>
-                    <span class="snippet-arrow">→</span>
-                </a>
-                <a href="#portfolio" data-tab="portfolio" class="snippet">
-                    <span class="snippet-label">Publications</span>
-                    <span class="snippet-arrow">→</span>
-                </a>
-            </div>
-        </section>
+<!-- Matmul transition overlay -->
+<div class="matmul-overlay" id="matmul-overlay" aria-hidden="true">
+  <div class="matmul-stage">
+    <span class="matmul-label">projecting</span>
+    <div class="matmul-mat A" id="mat-A"></div>
+    <div class="matmul-op">×</div>
+    <div class="matmul-mat B" id="mat-B"></div>
+    <div class="matmul-op">=</div>
+    <div class="matmul-mat C" id="mat-C"></div>
+  </div>
+</div>
 
-        <!-- ABOUT -->
-        <section class="tab-panel" id="about" hidden>
-            <h2 class="panel-title">About</h2>
-            <div class="prose">
-                <p>
-                    I'm a Senior Data Scientist at Fidelity's AI Center of Excellence,
-                    where I work across the full LLM stack — from pre-training
-                    transformer models on large-scale enterprise data, to retrieval
-                    and RAG systems over unstructured text, to safety and guardrails
-                    for deployed models.
-                </p>
-                <p>
-                    My work spans session modeling and intent prediction on clickstream
-                    data, conversation and transcript analytics with retrieval-augmented
-                    summarization, enterprise LLM safety and red-teaming, and building
-                    assistive copilots for internal workflows. I care a lot about making
-                    these systems reliable enough to actually deploy.
-                </p>
-                <p>
-                    Before Fidelity, I was at ZS Associates working on pharma analytics,
-                    explainable AI for ML predictions, and mixed-integer optimization
-                    for compliance-heavy program design.
-                </p>
-                <p>
-                    I did my MS by Research at <strong>IIT Madras</strong> with the ADOPT
-                    group (advisor: Prof. P. Ramu), working on interpretable
-                    Self-Organizing Maps for design-space exploration and optimization
-                    — published in Springer's <em>Structural and Multidisciplinary
-                    Optimization</em> and presented at WCSMO-13 in Beijing. I've continued
-                    collaborating with IIT Madras since, including a 2023 <em>Heliyon</em>
-                    paper applying data-driven methods to social capital in Farmer
-                    Producer Companies. Peer-reviewed work is listed on
-                    <a href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
-                </p>
-                <p>
-                    I'm drawn to problems where research meets production:
-                    pre-training, retrieval, alignment, and evaluation. I like small,
-                    composable systems. I like shipping.
-                </p>
+<!-- Tweaks panel -->
+<div class="tweaks-panel" id="tweaks">
+  <div class="tweaks-title">Tweaks</div>
+  <label>theme
+    <div class="tseg" data-key="theme">
+      <button data-val="blueprint" class="on">blueprint</button>
+      <button data-val="paper">paper</button>
+      <button data-val="dark">dark</button>
+    </div>
+  </label>
+  <label>density
+    <div class="tseg" data-key="density">
+      <button data-val="normal" class="on">normal</button>
+      <button data-val="compact">compact</button>
+    </div>
+  </label>
+  <label>labels
+    <div class="tseg" data-key="labels">
+      <button data-val="on" class="on">on</button>
+      <button data-val="off">off</button>
+    </div>
+  </label>
+</div>
 
-                <h3>Stack</h3>
-                <p class="tags">
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">transformers</span>
-                    <span class="tag">LangChain</span>
-                    <span class="tag">FastAPI</span>
-                    <span class="tag">scikit-learn</span>
-                    <span class="tag">pandas</span>
-                    <span class="tag">numpy</span>
-                    <span class="tag">optuna</span>
-                    <span class="tag">AWS (EC2 / S3 / SageMaker)</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">MATLAB</span>
-                </p>
-            </div>
-        </section>
+<script src="site.js?v=1"></script>
+<script>
+// === Persisted tweak defaults ===
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "theme": "blueprint",
+  "density": "normal",
+  "labels": "on"
+}/*EDITMODE-END*/;
 
-        <!-- PROJECTS -->
-        <section class="tab-panel" id="projects" hidden>
-            <h2 class="panel-title">Projects</h2>
-            <p class="panel-note">Tools and open-source I've built.</p>
+// Wait for content to render before wiring interactive bits
+document.addEventListener('content:ready', () => {
 
-            <div class="cards">
-                <a class="card" href="https://github.com/SPThole/CoexistAI" target="_blank" rel="noopener" data-repo="SPThole/CoexistAI" data-theme="github" data-badge="CoexistAI" data-sub="Open source · ★ 470">
-                    <div class="card-cover">
-                        <img src="https://opengraph.githubassets.com/1/SPThole/CoexistAI" alt="CoexistAI repository preview" referrerpolicy="no-referrer">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">CoexistAI</span>
-                            <span class="card-meta">★ 470 · Open source</span>
-                        </div>
-                        <p class="card-desc">
-                            LLM-driven research automation framework. FastAPI + LangChain,
-                            multimodal inputs (web, Reddit, YouTube, PDFs, code),
-                            SearxNG retrieval, and pluggable LLMs with async APIs.
-                        </p>
-                    </div>
-                </a>
-                <a class="card" href="https://github.com/SPThole/smallGPT" target="_blank" rel="noopener" data-repo="SPThole/smallGPT" data-theme="github" data-badge="smallGPT" data-sub="From-scratch LLMs">
-                    <div class="card-cover">
-                        <img src="https://opengraph.githubassets.com/1/SPThole/smallGPT" alt="smallGPT repository preview" referrerpolicy="no-referrer">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">smallGPT</span>
-                            <span class="card-meta">From scratch · LLMs</span>
-                        </div>
-                        <p class="card-desc">
-                            From-scratch implementations of LLM internals: GPT-2,
-                            Flash Attention, RoPE, Multi-Head Latent Attention,
-                            speculative decoding, online softmax, scalar autodiff.
-                        </p>
-                    </div>
-                </a>
-                <a class="card" href="https://github.com/SPThole/parameter-golf-experimentations" target="_blank" rel="noopener" data-repo="SPThole/parameter-golf-experimentations" data-theme="github" data-badge="parameter-golf" data-sub="8×H100 · 16 MB">
-                    <div class="card-cover">
-                        <img src="https://opengraph.githubassets.com/1/SPThole/parameter-golf-experimentations" alt="parameter-golf-experimentations repository preview" referrerpolicy="no-referrer">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">parameter-golf-experimentations</span>
-                            <span class="card-meta">8×H100 · 16 MB</span>
-                        </div>
-                        <p class="card-desc">
-                            119+ experiments for OpenAI Parameter Golf. Muon optimizer,
-                            meta-TTT, parallel residuals, architectural rewrites.
-                            Best: <strong>1.0744 bpb</strong> on legal_ttt.
-                        </p>
-                    </div>
-                </a>
-                <a class="card" href="https://github.com/SPThole/bpb_wtf" target="_blank" rel="noopener" data-repo="SPThole/bpb_wtf" data-theme="github" data-badge="bpb.wtf" data-sub="Experiment viz">
-                    <div class="card-cover">
-                        <img src="https://opengraph.githubassets.com/1/SPThole/bpb_wtf" alt="bpb.wtf repository preview" referrerpolicy="no-referrer">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">bpb.wtf</span>
-                            <span class="card-meta">Experiment viz</span>
-                        </div>
-                        <p class="card-desc">
-                            Interactive mind-map for ML experimentation journeys.
-                            Concept-level nodes, organic Bezier edges, sentiment
-                            indicators, optional LLM-powered Python API.
-                        </p>
-                    </div>
-                </a>
-                <!-- Add new projects here. Copy a <a class="card"> block above. Set data-repo="user/repo" for GitHub covers, or add data-theme + data-badge + data-sub for a themed SVG tile. -->
-            </div>
-        </section>
+  // --- Tweaks ---
+  (function initTweaks() {
+    const body = document.body;
+    Object.entries(TWEAK_DEFAULTS).forEach(([k,v]) => body.setAttribute('data-'+k, v));
+    const panel = document.getElementById('tweaks');
+    panel.querySelectorAll('.tseg').forEach(seg => {
+      const key = seg.dataset.key;
+      seg.querySelectorAll('button').forEach(b => {
+        b.classList.toggle('on', b.dataset.val === TWEAK_DEFAULTS[key]);
+        b.addEventListener('click', () => {
+          seg.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+          b.classList.add('on');
+          body.setAttribute('data-'+key, b.dataset.val);
+          try {
+            window.parent.postMessage({type: '__edit_mode_set_keys', edits: {[key]: b.dataset.val}}, '*');
+          } catch(e) {}
+        });
+      });
+    });
+    window.addEventListener('message', (e) => {
+      if (!e.data) return;
+      if (e.data.type === '__activate_edit_mode') panel.classList.add('open');
+      if (e.data.type === '__deactivate_edit_mode') panel.classList.remove('open');
+    });
+    try { window.parent.postMessage({type: '__edit_mode_available'}, '*'); } catch(e) {}
+  })();
 
-        <!-- POSTS -->
-        <section class="tab-panel" id="posts" hidden>
-            <h2 class="panel-title">Posts</h2>
-            <p class="panel-note">Nothing here yet — coming soon.</p>
-            <ul class="list posts">
-                <!-- Posts will appear here. Copy this block:
-                <li>
-                    <div class="list-row">
-                        <a href="posts/my-slug.html" class="list-title">My title</a>
-                        <span class="list-meta">YYYY-MM-DD</span>
-                    </div>
-                    <p class="list-desc">One-line summary.</p>
-                </li>
-                -->
-            </ul>
-        </section>
+  // --- Tabs + matmul transition ---
+  (function initTabs() {
+    const panels = document.querySelectorAll('.tab-panel');
+    const overlay = document.getElementById('matmul-overlay');
+    const matA = document.getElementById('mat-A');
+    const matB = document.getElementById('mat-B');
+    const matC = document.getElementById('mat-C');
 
-        <!-- PORTFOLIO -->
-        <section class="tab-panel" id="portfolio" hidden>
-            <h2 class="panel-title">Publications &amp; Projects</h2>
-            <p class="panel-note">
-                Peer-reviewed research in design optimization, ML interpretability, and
-                data-driven social analysis — plus a few fun sidequests.
-            </p>
+    function buildMat(el) {
+      el.innerHTML = '';
+      for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) {
+        const d = document.createElement('div');
+        d.className = 'matmul-cell';
+        d.dataset.r = r; d.dataset.c = c;
+        el.appendChild(d);
+      }
+    }
+    buildMat(matA); buildMat(matB); buildMat(matC);
 
-            <div class="scholar-stats">
-                <div class="stat">
-                    <span class="stat-num">60+</span>
-                    <span class="stat-label">Citations</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">2</span>
-                    <span class="stat-label">h-index</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">2</span>
-                    <span class="stat-label">i10-index</span>
-                </div>
-                <a class="stat-link" href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Full profile on Google Scholar →</a>
-            </div>
+    function runMatmul(done) {
+      overlay.classList.add('on');
+      const aCells = matA.querySelectorAll('.matmul-cell');
+      const bCells = matB.querySelectorAll('.matmul-cell');
+      const cCells = matC.querySelectorAll('.matmul-cell');
+      cCells.forEach(c => c.classList.remove('filled','pulse'));
 
-            <h3 class="group-heading">Journal papers</h3>
-            <div class="cards">
-                <a class="card" href="https://link.springer.com/article/10.1007/s00158-020-02611-6" target="_blank" rel="noopener"
-                   data-theme="springer" data-badge="Springer" data-sub="SMO · 2020">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Design space exploration and optimization using Self-Organizing Maps</span>
-                            <span class="card-meta">Springer SMO · 2020 · 49 cites</span>
-                        </div>
-                        <p class="card-desc">
-                            With P. Ramu. Novel neural-network algorithm for multivariate
-                            response-surface visualization. Reaches optima with ~40% fewer
-                            data points. <em>Structural and Multidisciplinary Optimization</em> (IF 3.37).
-                        </p>
-                    </div>
-                </a>
-                <a class="card" href="https://www.cell.com/heliyon/fulltext/S2405-8440(23)06859-X" target="_blank" rel="noopener"
-                   data-theme="heliyon" data-badge="Heliyon" data-sub="Elsevier · 2023">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Data-driven analysis of social capital in Farmer Producer Companies</span>
-                            <span class="card-meta">Heliyon · 2023 · 11 cites</span>
-                        </div>
-                        <p class="card-desc">
-                            With A. Jayaraman, P. Ramu, S.C. Rajan. Applied data-driven methods
-                            to quantify social-capital formation in Indian Farmer Producer
-                            Companies. <em>Heliyon</em> (Elsevier / Cell Press).
-                        </p>
-                    </div>
-                </a>
-            </div>
+      let step = 0; const total = 16; let swapped = false;
+      const t = setInterval(() => {
+        aCells.forEach(c => c.classList.remove('row-hot'));
+        bCells.forEach(c => c.classList.remove('col-hot'));
+        cCells.forEach(c => c.classList.remove('pulse'));
+        if (!swapped && step >= 4 && done) { swapped = true; done(); }
+        if (step >= total) {
+          clearInterval(t);
+          setTimeout(() => overlay.classList.remove('on'), 100);
+          if (!swapped && done) done();
+          return;
+        }
+        const r = Math.floor(step / 4);
+        const c = step % 4;
+        aCells.forEach(cell => { if (+cell.dataset.r === r) cell.classList.add('row-hot'); });
+        bCells.forEach(cell => { if (+cell.dataset.c === c) cell.classList.add('col-hot'); });
+        cCells.forEach(cell => {
+          if (+cell.dataset.r === r && +cell.dataset.c === c) {
+            cell.classList.add('filled','pulse');
+          }
+        });
+        step++;
+      }, 38);
+    }
 
-            <h3 class="group-heading">Conference papers</h3>
-            <div class="cards">
-                <a class="card" href="https://spthole.github.io/Sidhant_Thole/Projects/robustsom" target="_blank" rel="noopener"
-                   data-theme="conference" data-badge="WCSMO-13" data-sub="Beijing · 2019">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Identifying robust design spaces using Self-Organizing Maps</span>
-                            <span class="card-meta">WCSMO-13 · Beijing · 2019</span>
-                        </div>
-                        <p class="card-desc">
-                            13th World Congress of Structural and Multidisciplinary
-                            Optimization. Identifies regions of optima that remain robust
-                            under uncertainty in input features.
-                        </p>
-                    </div>
-                </a>
-            </div>
+    function show(id) {
+      panels.forEach(p => p.hidden = (p.id !== id));
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.dataset.tab === id);
+      });
+      window.scrollTo({top: 0, behavior: 'instant'});
+    }
+    function fromHash(animate) {
+      const id = (location.hash || '#home').slice(1);
+      const valid = ['home','about','projects','posts','portfolio','resume'].includes(id) ? id : 'home';
+      if (animate) runMatmul(() => show(valid)); else show(valid);
+    }
 
-            <h3 class="group-heading">Thesis</h3>
-            <div class="cards">
-                <a class="card" href="https://spthole.github.io/Sidhant_Thole/Projects/dsesom" target="_blank" rel="noopener"
-                   data-theme="iitm" data-badge="IIT Madras" data-sub="MS Research · 2020">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Interpretable Self-Organizing Maps for Design Space Exploration and Optimization</span>
-                            <span class="card-meta">MS Research · IIT Madras · 2020</span>
-                        </div>
-                        <p class="card-desc">
-                            Advisor: Prof. P. Ramu (ADOPT group). Interpretable SOM variants
-                            for sampling, EDA, correlation hunting, outlier detection,
-                            and optimization under tight computational budgets.
-                        </p>
-                    </div>
-                </a>
-            </div>
+    document.querySelectorAll('[data-tab]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const tab = a.dataset.tab;
+        if (!tab) return;
+        e.preventDefault();
+        if (('#' + tab) === location.hash) return;
+        location.hash = '#' + tab;
+      });
+    });
+    window.addEventListener('hashchange', () => fromHash(true));
+    fromHash(false);
+  })();
 
-            <h3 class="group-heading">Competitions</h3>
-            <div class="cards">
-                <a class="card" href="https://www.kaggle.com/competitions/bms-molecular-translation" target="_blank" rel="noopener"
-                   data-theme="kaggle" data-badge="Kaggle" data-sub="Rank 56 / 874">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Kaggle BMS — Molecular Translation</span>
-                            <span class="card-meta">2021 · Rank 56 / 874</span>
-                        </div>
-                        <p class="card-desc">
-                            Predicting InChI sequences from noisy scanned molecular images
-                            (~2.4M labels). Mean Levenshtein 1.43 with a vision + LSTM-attention
-                            captioning stack.
-                        </p>
-                    </div>
-                </a>
-            </div>
+  // --- KV-cache loader animation on Notes tab ---
+  (function kvCacheScene() {
+    const grid = document.getElementById('kv-grid');
+    if (!grid) return;
+    const COLS = 24, ROWS = 6;
+    const TOTAL = COLS * ROWS;
+    for (let i = 0; i < TOTAL; i++) {
+      const cell = document.createElement('i');
+      grid.appendChild(cell);
+    }
+    const cells = Array.from(grid.children);
+    const pctEl = document.querySelector('.kv-loader [data-pct]');
+    const layerEl = document.querySelector('.kv-loader [data-layer]');
+    const headEl = document.querySelector('.kv-loader [data-head]');
+    const seqEl = document.querySelector('.kv-loader [data-seq]');
+    const replyEl = document.getElementById('younger-reply');
+    const REPLY = (window.__youngerReply || '...so I just keep going?');
+    let started = false;
 
-            <h3 class="group-heading">Collaborators</h3>
-            <div class="cards">
-                <a class="card" href="https://ed.iitm.ac.in/~palramu/" target="_blank" rel="noopener"
-                   data-theme="faculty" data-badge="PR" data-sub="IIT Madras · ADOPT">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Prof. Palaniappan Ramu</span>
-                            <span class="card-meta">IIT Madras · ADOPT</span>
-                        </div>
-                        <p class="card-desc">
-                            MS advisor and long-running collaborator on design optimization
-                            and data-driven research.
-                        </p>
-                    </div>
-                </a>
-                <a class="card" href="https://hss.iitm.ac.in/faculty/sudhir-chella-rajan/" target="_blank" rel="noopener"
-                   data-theme="faculty" data-badge="SR" data-sub="IIT Madras · HSS">
-                    <div class="card-cover"></div>
-                    <div class="card-body">
-                        <div class="card-head">
-                            <span class="card-title">Prof. Sudhir Chella Rajan</span>
-                            <span class="card-meta">IIT Madras · HSS</span>
-                        </div>
-                        <p class="card-desc">
-                            Co-author on the Farmer Producer Companies study — data methods
-                            applied to social-science research.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </section>
+    function startFill() {
+      if (started) return; started = true;
+      let i = 0;
+      const tick = () => {
+        if (i >= TOTAL) { setTimeout(typeReply, 350); return; }
+        const cell = cells[i];
+        cell.classList.add(i % 2 === 0 ? 'k' : 'v', 'hot');
+        setTimeout(() => cell.classList.remove('hot'), 120);
+        const pct = Math.round(((i+1) / TOTAL) * 100);
+        pctEl.textContent = pct + '%';
+        layerEl.textContent = Math.min(12, Math.floor((i / TOTAL) * 12) + 1);
+        headEl.textContent = Math.min(8, (i % 8) + 1);
+        seqEl.textContent = Math.min(128, Math.round(((i+1) / TOTAL) * 128));
+        i++;
+        setTimeout(tick, 18);
+      };
+      tick();
+    }
+    function typeReply() {
+      if (!replyEl) return;
+      let i = 0;
+      const step = () => {
+        if (i > REPLY.length) return;
+        replyEl.textContent = REPLY.slice(0, i);
+        i++;
+        setTimeout(step, 55);
+      };
+      step();
+    }
 
-        <!-- RESUME -->
-        <section class="tab-panel" id="resume" hidden>
-            <div class="resume-header">
-                <h2 class="panel-title">Resume</h2>
-                <a href="resume/Sidhant_Thole.pdf" download class="cta">Download PDF ↓</a>
-            </div>
-            <div class="resume-embed">
-                <object data="resume/Sidhant_Thole.pdf#view=FitH" type="application/pdf" width="100%" height="900">
-                    <p>Your browser can't embed PDFs.
-                        <a href="resume/Sidhant_Thole.pdf">Download it here</a>.
-                    </p>
-                </object>
-            </div>
-        </section>
+    const postsPanel = document.getElementById('posts');
+    const obs = new MutationObserver(() => { if (!postsPanel.hidden) startFill(); });
+    obs.observe(postsPanel, { attributes: true, attributeFilter: ['hidden'] });
+    if (!postsPanel.hidden) startFill();
+  })();
 
-    </main>
-
-    <footer class="site-footer">
-        <ul class="footer-links">
-            <li><a href="mailto:tholesidhantp@gmail.com">Email</a></li>
-            <li><a href="https://in.linkedin.com/in/sidhant-p-thole-62128aaa" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/SPThole" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-            <li><a href="https://www.kaggle.com/dawinci" target="_blank" rel="noopener">Kaggle</a></li>
-            <li><a href="#resume" data-tab="resume">Resume</a></li>
-        </ul>
-        <p class="copyright">© 2026 Sidhant Thole</p>
-    </footer>
-
-    <script src="script.js?v=7"></script>
+});
+</script>
 </body>
 </html>
