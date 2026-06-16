@@ -5,4 +5,4 @@ link: blog/research_taste_methodology.html
 cover: auto
 ---
 
-Evaluating taste of auto research agents, with frozen AI research bets scored only against later human experiments.
+Evaluating the ability of AI auto research systems to anticipate useful research directions, with frozen AI research bets scored only against later human experiments.
