@@ -1,7 +1,7 @@
 ---
 title: Design space exploration with Self-Organizing Maps
 meta: Springer SMO · 2020 · 49 cites
-link: https://link.springer.com/article/10.1007/s00158-020-02611-6
+link: https://link.springer.com/article/10.1007/s00158-020-02665-6
 group: journal
 cover: contours
 ---

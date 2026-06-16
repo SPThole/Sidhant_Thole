@@ -1,7 +1,7 @@
 ---
 title: Social capital in Farmer Producer Companies
 meta: Heliyon · 2023 · 11 cites
-link: https://www.cell.com/heliyon/fulltext/S2405-8440(23)06859-X
+link: https://www.cell.com/heliyon/fulltext/S2405-8440(23)04697-2
 group: journal
 cover: network
 ---
