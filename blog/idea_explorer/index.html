@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test of Taste Idea Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Test of Taste</p>
+        <h1>Idea Explorer</h1>
+        <p class="lede">
+          Browse frozen AI ideas and later human rows by tag cluster. Click any card for
+          the full idea JSON, row README excerpt, and scorecard links.
+        </p>
+      </div>
+      <div class="summary-strip" id="summaryStrip"></div>
+    </header>
+
+    <main class="shell">
+      <aside class="sidebar">
+        <section class="control-block">
+          <h2>Mode</h2>
+          <div class="segmented" role="group" aria-label="Explorer mode">
+            <button class="mode-button is-active" type="button" data-mode="both">Human plus AI</button>
+            <button class="mode-button" type="button" data-mode="ai">AI only</button>
+            <button class="mode-button" type="button" data-mode="human">Human only</button>
+          </div>
+        </section>
+
+        <section class="control-block">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="tag, row, title, SOAP, Muon...">
+        </section>
+
+        <section class="control-block">
+          <div class="row-between">
+            <h2>Jump Filter</h2>
+            <button class="text-button" type="button" id="clearRowRank">Clear</button>
+          </div>
+          <div class="jump-grid">
+            <label>
+              <span>Row</span>
+              <input id="rowFilterInput" type="number" min="1" max="37" inputmode="numeric" placeholder="Any" autocomplete="off">
+            </label>
+            <label>
+              <span>Idea</span>
+              <input id="ideaFilterInput" type="number" min="1" max="12" inputmode="numeric" placeholder="Any" autocomplete="off">
+            </label>
+          </div>
+          <p class="hint">Use row only for that boundary, or row + idea for one AI bet.</p>
+        </section>
+
+        <section class="control-block">
+          <div class="row-between">
+            <h2>Clusters</h2>
+            <button class="text-button" type="button" id="clearCluster">All</button>
+          </div>
+          <div class="cluster-list" id="clusterList"></div>
+        </section>
+      </aside>
+
+      <section class="board" aria-live="polite">
+        <div class="board-top">
+          <div>
+            <h2 id="boardTitle">All Tag Clusters</h2>
+            <p id="boardSubtitle"></p>
+          </div>
+          <div class="density-note">Hover for preview. Click for full detail.</div>
+        </div>
+        <div class="cluster-grid" id="clusterGrid"></div>
+      </section>
+    </main>
+
+    <div class="hover-card" id="hoverCard" hidden></div>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <header class="modal-header">
+          <div>
+            <p class="modal-kicker" id="modalKicker"></p>
+            <h2 id="modalTitle"></h2>
+          </div>
+          <button class="close-button" type="button" id="closeModal" aria-label="Close detail">Close</button>
+        </header>
+        <div class="modal-body" id="modalBody"></div>
+      </article>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

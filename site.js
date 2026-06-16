@@ -399,7 +399,6 @@ function renderPublications(site, pubs) {
 function renderNotes(site, notes) {
   const n = site.notes;
   const panel = document.getElementById('posts');
-  const scene = n.scene;
   const notesList = notes.length ? `
     <h3 class="group-heading">writing</h3>
     <div class="cards">
@@ -415,47 +414,7 @@ function renderNotes(site, notes) {
       <span class="schema-stamp">${esc(n.schema_stamp)}</span>
     </div>
     <p class="panel-note">${esc(n.panel_note)}</p>
-    <div class="notes-hero">
-      <figure class="notes-photo">
-        <img src="${esc(scene.photo)}" alt="${esc(scene.photo_caption)}" />
-        <figcaption>${esc(scene.photo_caption)}</figcaption>
-      </figure>
-      <div class="notes-chat">
-        <div class="chat-bubble from-oldman">
-          <div class="bubble-meta">
-            <span class="avatar-mono">◉</span>
-            <span class="bubble-name">${esc(scene.older.name)}</span>
-            <span class="bubble-tag">${esc(scene.older.tag)}</span>
-          </div>
-          <p class="bubble-text"><span class="bubble-quote">“${esc(scene.older.quote)}”</span></p>
-          <div class="bubble-caption">${esc(scene.older.caption)}</div>
-        </div>
-        <div class="kv-loader" role="progressbar" aria-label="KV cache loading">
-          <div class="kv-head">
-            <span class="kv-title">kv_cache&nbsp;· warming&nbsp;up</span>
-            <span class="kv-pct" data-pct>0%</span>
-          </div>
-          <div class="kv-grid" id="kv-grid" aria-hidden="true"></div>
-          <div class="kv-foot">
-            <span>layer <b data-layer>0</b>/12</span>
-            <span>head <b data-head>0</b>/8</span>
-            <span>seq <b data-seq>0</b>/128</span>
-          </div>
-        </div>
-        <div class="chat-bubble from-younger">
-          <div class="bubble-meta">
-            <span class="avatar-mono">◎</span>
-            <span class="bubble-name">${esc(scene.younger.name)}</span>
-            <span class="bubble-tag">${esc(scene.younger.tag)}</span>
-          </div>
-          <p class="bubble-text bubble-typed"><span id="younger-reply"></span><span class="caret"></span></p>
-        </div>
-      </div>
-    </div>
     ${notesList}`;
-
-  // stash reply text for the animator
-  window.__youngerReply = scene.younger.reply;
 }
 
 function renderResume(site) {

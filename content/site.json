@@ -67,21 +67,6 @@
     "panel_number": "⋯",
     "schema_stamp": "scratchpad · wip",
     "panel_note": "Short-form writing, research notes, and working thoughts.",
-    "scene": {
-      "photo": "assets/oldman_bench.jpg",
-      "photo_caption": "jungfraujoch · top of europe · 3,454 m",
-      "older": {
-        "name": "older_self",
-        "tag": "teacher · frozen weights",
-        "quote": "Transferring learning…",
-        "caption": "— pretrained on 80 years of mountains"
-      },
-      "younger": {
-        "name": "younger_self",
-        "tag": "student · learning rate = 1e-3",
-        "reply": "...so I just keep going?"
-      }
-    },
     "empty_hand": "more notes, coming soon ✎",
     "empty_sub": "— writing queue · priority=low —"
   },

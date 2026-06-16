@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light" />
   <meta name="description" content="Sidhant Thole — Senior Data Scientist & AI Researcher" />
   <title>Sidhant Thole — Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=15" />
+  <link rel="stylesheet" href="styles.css?v=16" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
@@ -62,7 +62,7 @@
   </label>
 </div>
 
-<script src="site.js?v=1"></script>
+<script src="site.js?v=2"></script>
 <script>
 // === Persisted tweak defaults ===
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
@@ -176,61 +176,6 @@ document.addEventListener('content:ready', () => {
     });
     window.addEventListener('hashchange', () => fromHash(true));
     fromHash(false);
-  })();
-
-  // --- KV-cache loader animation on Notes tab ---
-  (function kvCacheScene() {
-    const grid = document.getElementById('kv-grid');
-    if (!grid) return;
-    const COLS = 24, ROWS = 6;
-    const TOTAL = COLS * ROWS;
-    for (let i = 0; i < TOTAL; i++) {
-      const cell = document.createElement('i');
-      grid.appendChild(cell);
-    }
-    const cells = Array.from(grid.children);
-    const pctEl = document.querySelector('.kv-loader [data-pct]');
-    const layerEl = document.querySelector('.kv-loader [data-layer]');
-    const headEl = document.querySelector('.kv-loader [data-head]');
-    const seqEl = document.querySelector('.kv-loader [data-seq]');
-    const replyEl = document.getElementById('younger-reply');
-    const REPLY = (window.__youngerReply || '...so I just keep going?');
-    let started = false;
-
-    function startFill() {
-      if (started) return; started = true;
-      let i = 0;
-      const tick = () => {
-        if (i >= TOTAL) { setTimeout(typeReply, 350); return; }
-        const cell = cells[i];
-        cell.classList.add(i % 2 === 0 ? 'k' : 'v', 'hot');
-        setTimeout(() => cell.classList.remove('hot'), 120);
-        const pct = Math.round(((i+1) / TOTAL) * 100);
-        pctEl.textContent = pct + '%';
-        layerEl.textContent = Math.min(12, Math.floor((i / TOTAL) * 12) + 1);
-        headEl.textContent = Math.min(8, (i % 8) + 1);
-        seqEl.textContent = Math.min(128, Math.round(((i+1) / TOTAL) * 128));
-        i++;
-        setTimeout(tick, 18);
-      };
-      tick();
-    }
-    function typeReply() {
-      if (!replyEl) return;
-      let i = 0;
-      const step = () => {
-        if (i > REPLY.length) return;
-        replyEl.textContent = REPLY.slice(0, i);
-        i++;
-        setTimeout(step, 55);
-      };
-      step();
-    }
-
-    const postsPanel = document.getElementById('posts');
-    const obs = new MutationObserver(() => { if (!postsPanel.hidden) startFill(); });
-    obs.observe(postsPanel, { attributes: true, attributeFilter: ['hidden'] });
-    if (!postsPanel.hidden) startFill();
   })();
 
 });
