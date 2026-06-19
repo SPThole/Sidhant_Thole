@@ -67,6 +67,11 @@
     "panel_number": "⋯",
     "schema_stamp": "scratchpad · wip",
     "panel_note": "Short-form writing, research notes, and working thoughts.",
+    "feedback": {
+      "repo": "SPThole/Sidhant_Thole",
+      "title": "react / comment",
+      "note": "Submit on GitHub to log it."
+    },
     "empty_hand": "more notes, coming soon ✎",
     "empty_sub": "— writing queue · priority=low —"
   },

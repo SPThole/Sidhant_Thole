@@ -399,6 +399,8 @@ function renderPublications(site, pubs) {
 function renderNotes(site, notes) {
   const n = site.notes;
   const panel = document.getElementById('posts');
+  const feedback = n.feedback || {};
+  const feedbackNotes = notes.length ? notes : [{ title: 'Notes', link: location.href }];
   const notesList = notes.length ? `
     <h3 class="group-heading">writing</h3>
     <div class="cards">
@@ -414,7 +416,75 @@ function renderNotes(site, notes) {
       <span class="schema-stamp">${esc(n.schema_stamp)}</span>
     </div>
     <p class="panel-note">${esc(n.panel_note)}</p>
-    ${notesList}`;
+    ${notesList}
+    <section class="note-feedback" aria-labelledby="note-feedback-title">
+      <div>
+        <h3 id="note-feedback-title">${esc(feedback.title || 'react / comment')}</h3>
+        <p>${esc(feedback.note || 'Submit on GitHub to log it.')}</p>
+      </div>
+      <form id="note-feedback-form">
+        <input type="hidden" name="emoji" value="👍" />
+        <div class="emoji-picker" role="group" aria-label="Emoji reaction">
+          ${['👍','❤️','🔥','💡','👀','🤔'].map((emoji, i) => `
+            <button type="button" class="${i === 0 ? 'on' : ''}" data-emoji="${esc(emoji)}" aria-label="React ${esc(emoji)}">${esc(emoji)}</button>
+          `).join('')}
+        </div>
+        <label>
+          <span>note</span>
+          <select name="note">
+            ${feedbackNotes.map((item, i) => `
+              <option value="${i}">${esc(item.title || `note ${i + 1}`)}</option>
+            `).join('')}
+          </select>
+        </label>
+        <label>
+          <span>comment</span>
+          <textarea name="comment" rows="4" maxlength="1200" placeholder="Add a comment..."></textarea>
+        </label>
+        <div class="feedback-actions">
+          <button type="submit">log on GitHub</button>
+          <span id="note-feedback-status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>`;
+  bindNoteFeedback(feedback, feedbackNotes);
+}
+
+function bindNoteFeedback(feedback, notes) {
+  const form = document.getElementById('note-feedback-form');
+  if (!form) return;
+  const emojiInput = form.elements.emoji;
+  const status = document.getElementById('note-feedback-status');
+
+  form.querySelectorAll('[data-emoji]').forEach(button => {
+    button.addEventListener('click', () => {
+      form.querySelectorAll('[data-emoji]').forEach(b => b.classList.remove('on'));
+      button.classList.add('on');
+      emojiInput.value = button.dataset.emoji || '👍';
+    });
+  });
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const repo = feedback.repo || 'SPThole/Sidhant_Thole';
+    const selected = notes[Number(form.elements.note.value)] || notes[0] || {};
+    const emoji = emojiInput.value || '👍';
+    const comment = form.elements.comment.value.trim();
+    const noteTitle = selected.title || 'Notes';
+    const noteLink = selected.link || location.href;
+    const title = `[notes] ${emoji} ${noteTitle}`;
+    const body = [
+      `Emoji: ${emoji}`,
+      `Note: ${noteTitle}`,
+      `URL: ${new URL(noteLink, location.href).href}`,
+      '',
+      'Comment:',
+      comment || '(emoji-only reaction)'
+    ].join('\n');
+    const url = `https://github.com/${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    window.open(url, '_blank', 'noopener');
+    if (status) status.textContent = 'Opened GitHub issue draft.';
+  });
 }
 
 function renderResume(site) {

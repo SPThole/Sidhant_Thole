@@ -710,6 +710,112 @@ body[data-theme="dark"] .nav-links a.active { color: var(--paper); background: v
   content: ''; width: 18px; height: 1px; background: var(--blueprint);
 }
 
+.note-feedback {
+  margin-top: 36px;
+  padding: 18px 20px;
+  border: 1px solid var(--rule-strong);
+  background: var(--surface);
+  display: grid;
+  grid-template-columns: minmax(180px, .8fr) minmax(280px, 1.2fr);
+  gap: 18px 24px;
+}
+.note-feedback h3 {
+  margin: 0 0 6px;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--blueprint);
+}
+.note-feedback p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.note-feedback form {
+  display: grid;
+  gap: 12px;
+}
+.emoji-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.emoji-picker button {
+  width: 38px;
+  height: 34px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+.emoji-picker button:hover,
+.emoji-picker button.on {
+  border-color: var(--ink);
+  background: var(--paper-2);
+  box-shadow: 3px 3px 0 -1px var(--paper-2), 3px 3px 0 0 var(--ink);
+}
+.note-feedback label {
+  display: grid;
+  gap: 6px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.note-feedback select,
+.note-feedback textarea {
+  width: 100%;
+  border: 1px solid var(--rule-strong);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 13px/1.5 var(--f-sans);
+  letter-spacing: 0;
+  text-transform: none;
+  padding: 9px 10px;
+}
+.note-feedback textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+.feedback-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.feedback-actions button {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  padding: 9px 12px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.feedback-actions button:hover {
+  transform: translateY(-1px);
+}
+#note-feedback-status {
+  color: var(--muted);
+  font-family: var(--f-mono);
+  font-size: 11px;
+}
+@media (max-width: 760px) {
+  .note-feedback {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Scholar stats */
 .scholar-stats {
   display: grid;
