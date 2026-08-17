@@ -38,7 +38,7 @@
     "panel_title": "Publications",
     "panel_number": "03",
     "schema_stamp": "projection · into the world",
-    "panel_note": "Patented and peer-reviewed work in applied ML, design optimization, interpretability, and data-driven social analysis — plus a few fun sidequests.",
+    "panel_note": "Peer-reviewed research in design optimization, ML interpretability, and data-driven social analysis — plus a few fun sidequests.",
     "stats": [
       { "num": "60+", "label": "citations" },
       { "num": "2",   "label": "h-index" },
@@ -46,7 +46,6 @@
     ],
     "scholar_link": "https://scholar.google.com/citations?user=G2UDs80AAAAJ&hl=en",
     "groups": [
-      { "id": "patents",       "title": "patents" },
       { "id": "journal",       "title": "journal papers" },
       { "id": "conference",    "title": "conference" },
       { "id": "thesis",        "title": "thesis" },

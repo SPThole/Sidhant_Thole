@@ -163,37 +163,6 @@ const covers = {
       <text x="25" y="44" font-family="JetBrains Mono" font-size="9" fill="currentColor" opacity=".7">InChI</text>
     </svg>`;
   },
-  taskflow() {
-    return `<svg width="100%" height="100%" viewBox="0 0 200 80" preserveAspectRatio="xMidYMid meet" fill="none" aria-label="Website page flow entering a task prediction model">
-      <g stroke="currentColor" stroke-width="1">
-        <rect x="12" y="17" width="34" height="20" rx="2"/>
-        <line x1="12" y1="23" x2="46" y2="23" opacity=".55"/>
-        <circle cx="17" cy="20" r="1" fill="currentColor" stroke="none"/>
-        <path d="M46 27 H57 V40 H66" stroke-dasharray="2 2" opacity=".65"/>
-
-        <rect x="12" y="45" width="34" height="20" rx="2"/>
-        <line x1="12" y1="51" x2="46" y2="51" opacity=".55"/>
-        <circle cx="17" cy="48" r="1" fill="currentColor" stroke="none"/>
-        <path d="M46 55 H57 V40 H66" stroke-dasharray="2 2" opacity=".65"/>
-
-        <rect x="66" y="24" width="55" height="32" rx="3" fill="currentColor" fill-opacity=".08"/>
-        <circle cx="79" cy="40" r="5"/>
-        <circle cx="94" cy="33" r="3"/>
-        <circle cx="94" cy="47" r="3"/>
-        <line x1="84" y1="38" x2="91" y2="34"/>
-        <line x1="84" y1="42" x2="91" y2="46"/>
-        <path d="M97 33 H107 M97 47 H107"/>
-
-        <path d="M121 40 H137"/>
-        <path d="M133 36 L137 40 L133 44"/>
-        <rect x="137" y="23" width="51" height="34" rx="3"/>
-      </g>
-      <text x="93" y="68" font-family="JetBrains Mono" font-size="7" fill="currentColor" text-anchor="middle" opacity=".65">page flow · context</text>
-      <text x="94" y="19" font-family="JetBrains Mono" font-size="7" fill="currentColor" text-anchor="middle" opacity=".8">task model</text>
-      <text x="162.5" y="37" font-family="JetBrains Mono" font-size="7" fill="currentColor" text-anchor="middle">predicted</text>
-      <text x="162.5" y="47" font-family="JetBrains Mono" font-size="7" fill="currentColor" text-anchor="middle">task + content</text>
-    </svg>`;
-  },
   initials(text) {
     return `<svg width="100%" height="100%" viewBox="0 0 200 80" preserveAspectRatio="xMidYMid meet" fill="none">
       <circle cx="100" cy="40" r="22" stroke="currentColor" stroke-width="1"/>
@@ -398,7 +367,7 @@ function renderPublications(site, pubs) {
     (bucketed[g] = bucketed[g] || []).push(pub);
   }
   const counters = {};
-  const shortFor = (g) => ({patents:'patent', journal:'paper', conference:'conf', thesis:'thesis', competitions:'comp', collaborators:'ppl'}[g] || g);
+  const shortFor = (g) => ({journal:'paper', conference:'conf', thesis:'thesis', competitions:'comp', collaborators:'ppl'}[g] || g);
   const groupsHTML = groups.map(g => {
     const items = bucketed[g.id] || [];
     if (!items.length) return '';

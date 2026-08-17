@@ -37,7 +37,6 @@ Save as `content/projects/my-thing.md`, then add `"my-thing.md"` to `content/pro
 
 Same shape, saved in `content/publications/`. Frontmatter **must** include `group:` — one of:
 - `journal`
-- `patents`
 - `conference`
 - `thesis`
 - `competitions`
@@ -62,7 +61,7 @@ Same shape, saved in `content/notes/`. As soon as the array in `content/notes/in
 | `cover:` value         | Result                                                  |
 | ---------------------- | ------------------------------------------------------- |
 | `auto`                 | GitHub OG image if `link` is github.com, else schematic |
-| `contours` / `network` / `waves` / `som` / `molecule` / `taskflow` | specific schematic |
+| `contours` / `network` / `waves` / `som` / `molecule` | specific schematic |
 | `initials:AB`          | monogram circle                                         |
 | `assets/foo.png` or URL | literal image                                          |
 | (omitted)              | deterministic schematic from the title                  |
