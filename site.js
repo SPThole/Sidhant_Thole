@@ -4,7 +4,8 @@
    All content lives under content/. This file reads it and renders
    everything. You should never need to touch it to add a project,
    publication, note, or update about-me text.
-   ===================================================================== */
+   =================================
+   ==================================== */
 
 (() => {
 
